@@ -1,13 +1,30 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap");
+
+:root {
+  --portfolio-header-font: "Chakra Petch";
+  --portfolio-body-font: "IBM Plex Sans";
+}
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--portfolio-header-font);
+}
+
+p,
+span,
+td,
+input {
+  font-family: var(--portfolio-body-font);
+  font-weight: 500;
 }
