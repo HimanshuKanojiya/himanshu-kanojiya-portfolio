@@ -13,7 +13,7 @@ export const NavBar: React.FC = () => {
   return (
     <NavBarContainer>
       <h3 className="outerLogo" tabIndex={0}>
-        H<span className="innerLogo">KANOJIYA</span>
+        HKAN<span className="innerLogo">OJIYA</span>
       </h3>
 
       <button
