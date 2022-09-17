@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Home: React.FC = () => {
-  return <p>HomePage Setup!</p>;
+  return <h1>HomePage Setup!</h1>;
 };
