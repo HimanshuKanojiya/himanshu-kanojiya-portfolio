@@ -6,6 +6,11 @@ export const GlobalCSS = createGlobalStyle`
         --chakra-patch-font: "Chakra Petch", sans-serif;
     }
 
+    html, #root {
+        width: 100%;
+        height: 100%;
+    }
+
     * {
         margin: 0;
         padding: 0;
@@ -22,6 +27,8 @@ export const GlobalCSS = createGlobalStyle`
     body{
         background-color: ${({ theme }) => theme.colors.background.bg1};
         font-family: var(--ibm-plex-font);
+        width: 100%;
+        height: 100%;
         position: relative;
     }
 

@@ -10,7 +10,7 @@ export const SideBarMenuContainer = styled.div`
   z-index: 1;
 
   .hamburgerNav {
-    height: 40px;
+    height: 50px;
     width: 100%;
     padding-inline: ${({ theme }) => theme.spaces.s};
     display: flex;
