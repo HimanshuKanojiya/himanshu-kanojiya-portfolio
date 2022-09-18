@@ -1,0 +1,29 @@
+{
+  "navMenuItems": [
+    {
+      "title": "Experiences",
+      "id": "1",
+      "jumpId": "Experiences"
+    },
+    {
+      "title": "Skills",
+      "id": "2",
+      "jumpId": "Skills"
+    },
+    {
+      "title": "Blogs",
+      "id": "3",
+      "jumpId": "Blogs"
+    },
+    {
+      "title": "Projects",
+      "id": "4",
+      "jumpId": "Projects"
+    },
+    {
+      "title": "Contact Us",
+      "id": "5",
+      "jumpId": "Contact Us"
+    }
+  ]
+}
