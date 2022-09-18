@@ -10,6 +10,7 @@ export const useMediaQuery = (mediaQuery: string) => {
     };
 
     window.addEventListener("resize", mediaQueryHandler);
+    mediaQueryHandler();
 
     return () => window.removeEventListener("resize", mediaQueryHandler);
   }, [match, mediaQuery]);

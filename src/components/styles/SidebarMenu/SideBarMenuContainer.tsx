@@ -54,4 +54,10 @@ export const SideBarMenuContainer = styled.div`
       margin: 0;
     }
   }
+
+  @media screen and (min-width: 686px) {
+    .hamburgerNav {
+      padding-inline: ${({ theme }) => theme.spaces.l};
+    }
+  }
 `;

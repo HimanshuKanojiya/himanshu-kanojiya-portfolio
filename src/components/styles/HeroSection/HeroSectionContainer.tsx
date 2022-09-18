@@ -76,4 +76,59 @@ export const HeroSectionContainer = styled.div`
       }
     }
   }
+
+  @media screen and (min-width: 686px) {
+    margin-inline: ${({ theme }) => theme.spaces.l};
+    width: 622px;
+
+    .heroContent {
+      .contentCTA {
+        flex-direction: row;
+        align-items: center;
+
+        .contentPrimaryAction {
+          margin: 0;
+          margin-right: ${({ theme }) => theme.spaces.xxl};
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1336px) {
+    margin-inline: 196px;
+    width: 662px;
+
+    .heroContent {
+      .contentSecondary {
+        font-size: ${({ theme }) =>
+          theme.fontSize.desktop.secondaryInformation};
+      }
+
+      .contentHeading {
+        font-size: ${({ theme }) => theme.fontSize.desktop.h1};
+      }
+
+      .contentDescription {
+        font-size: ${({ theme }) => theme.fontSize.desktop.body};
+        margin-bottom: ${({ theme }) => theme.spaces.xxl5};
+      }
+
+      .contentCTA {
+        flex-direction: row;
+        align-items: center;
+
+        .contentPrimaryAction {
+          margin: 0;
+          margin-right: ${({ theme }) => theme.spaces.xxl};
+          width: 195px;
+          height: 72px;
+          font-size: 24px;
+        }
+
+        .contentSecondaryAction {
+          font-size: 24px;
+        }
+      }
+    }
+  }
 `;
