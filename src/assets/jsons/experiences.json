@@ -1,0 +1,215 @@
+{
+  "title": "MY WORK EXPERIENCES",
+  "experienceItems": [
+    {
+      "jobId": "DMPTRJD06/21",
+      "jobTitle": "React Js Developer",
+      "companyLogo": "DynamicsMonkLogo",
+      "companyName": "Dynamics Monk Pvt Ltd",
+      "workingFrom": "06/2021",
+      "workingTo": "Present",
+      "description": "Responsilibites & impact:",
+      "responsibilites": [
+        "Produce good quality UI as same as designs in order to achieve best user experience.",
+        "Implement best practices on the web app that comply with w3c accessibility standards and Google SEO guidelines to improve search index results by 100%.",
+        "Analyzing component functionality & Integrate GA events to components to send user activities on Google Analytics.",
+        "Reviewing team members codes, and create in-depth bugs reports along with solutions.",
+        "Successfully implemented Micro-frontend for web apps using Module Federations along with mobile app using Cordova.",
+        "Refactored Webflow JavaScript codes in order to remove Webflow editor crashing issue which was affecting other teams to work on Webflow.",
+        "Enhanced code test coverage and helped team members to achieve test coverage up to 100%.",
+        "Train & mentoring new joiners for projects.",
+        "Resolved major negative user Experience flow issue for some web browsers to improve the user experience.",
+        "Built the automation script for QA to detect unwanted links on the website and reduced the time from 2 hours to 5 – 10 minutes."
+      ],
+      "skills": {
+        "title": "Skills:",
+        "skillsItems": [
+          {
+            "iconName": "JavaScriptIcon",
+            "name": "JavaScript"
+          },
+          {
+            "iconName": "ReactJsIcon",
+            "name": "React Js"
+          },
+          {
+            "iconName": "TypescriptIcon",
+            "name": "Typescript"
+          },
+          {
+            "iconName": "Css3Icon",
+            "name": "CSS3"
+          }
+        ]
+      }
+    },
+    {
+      "jobId": "DMPTRJD06/22",
+      "jobTitle": "React Js Developer",
+      "companyLogo": "DynamicsMonkLogo",
+      "companyName": "Dynamics Monk Pvt Ltd",
+      "workingFrom": "06/2021",
+      "workingTo": "Present",
+      "description": "Responsilibites & impact:",
+      "responsibilites": [
+        "Produce good quality UI as same as designs in order to achieve best user experience.",
+        "Implement best practices on the web app that comply with w3c accessibility standards and Google SEO guidelines to improve search index results by 100%.",
+        "Analyzing component functionality & Integrate GA events to components to send user activities on Google Analytics.",
+        "Reviewing team members codes, and create in-depth bugs reports along with solutions.",
+        "Successfully implemented Micro-frontend for web apps using Module Federations along with mobile app using Cordova.",
+        "Refactored Webflow JavaScript codes in order to remove Webflow editor crashing issue which was affecting other teams to work on Webflow.",
+        "Enhanced code test coverage and helped team members to achieve test coverage up to 100%.",
+        "Train & mentoring new joiners for projects.",
+        "Resolved major negative user Experience flow issue for some web browsers to improve the user experience.",
+        "Built the automation script for QA to detect unwanted links on the website and reduced the time from 2 hours to 5 – 10 minutes."
+      ],
+      "skills": {
+        "title": "Skills:",
+        "skillsItems": [
+          {
+            "iconName": "JavaScriptIcon",
+            "name": "JavaScript"
+          },
+          {
+            "iconName": "ReactJsIcon",
+            "name": "React Js"
+          },
+          {
+            "iconName": "TypescriptIcon",
+            "name": "Typescript"
+          },
+          {
+            "iconName": "Css3Icon",
+            "name": "CSS3"
+          }
+        ]
+      }
+    },
+    {
+      "jobId": "DMPTRJD06/23",
+      "jobTitle": "React Js Developer",
+      "companyLogo": "DynamicsMonkLogo",
+      "companyName": "Dynamics Monk Pvt Ltd",
+      "workingFrom": "06/2021",
+      "workingTo": "Present",
+      "description": "Responsilibites & impact:",
+      "responsibilites": [
+        "Produce good quality UI as same as designs in order to achieve best user experience.",
+        "Implement best practices on the web app that comply with w3c accessibility standards and Google SEO guidelines to improve search index results by 100%.",
+        "Analyzing component functionality & Integrate GA events to components to send user activities on Google Analytics.",
+        "Reviewing team members codes, and create in-depth bugs reports along with solutions.",
+        "Successfully implemented Micro-frontend for web apps using Module Federations along with mobile app using Cordova.",
+        "Refactored Webflow JavaScript codes in order to remove Webflow editor crashing issue which was affecting other teams to work on Webflow.",
+        "Enhanced code test coverage and helped team members to achieve test coverage up to 100%.",
+        "Train & mentoring new joiners for projects.",
+        "Resolved major negative user Experience flow issue for some web browsers to improve the user experience.",
+        "Built the automation script for QA to detect unwanted links on the website and reduced the time from 2 hours to 5 – 10 minutes."
+      ],
+      "skills": {
+        "title": "Skills:",
+        "skillsItems": [
+          {
+            "iconName": "JavaScriptIcon",
+            "name": "JavaScript"
+          },
+          {
+            "iconName": "ReactJsIcon",
+            "name": "React Js"
+          },
+          {
+            "iconName": "TypescriptIcon",
+            "name": "Typescript"
+          },
+          {
+            "iconName": "Css3Icon",
+            "name": "CSS3"
+          }
+        ]
+      }
+    },
+    {
+      "jobId": "DMPTRJD06/24",
+      "jobTitle": "React Js Developer",
+      "companyLogo": "DynamicsMonkLogo",
+      "companyName": "Dynamics Monk Pvt Ltd",
+      "workingFrom": "06/2021",
+      "workingTo": "Present",
+      "description": "Responsilibites & impact:",
+      "responsibilites": [
+        "Produce good quality UI as same as designs in order to achieve best user experience.",
+        "Implement best practices on the web app that comply with w3c accessibility standards and Google SEO guidelines to improve search index results by 100%.",
+        "Analyzing component functionality & Integrate GA events to components to send user activities on Google Analytics.",
+        "Reviewing team members codes, and create in-depth bugs reports along with solutions.",
+        "Successfully implemented Micro-frontend for web apps using Module Federations along with mobile app using Cordova.",
+        "Refactored Webflow JavaScript codes in order to remove Webflow editor crashing issue which was affecting other teams to work on Webflow.",
+        "Enhanced code test coverage and helped team members to achieve test coverage up to 100%.",
+        "Train & mentoring new joiners for projects.",
+        "Resolved major negative user Experience flow issue for some web browsers to improve the user experience.",
+        "Built the automation script for QA to detect unwanted links on the website and reduced the time from 2 hours to 5 – 10 minutes."
+      ],
+      "skills": {
+        "title": "Skills:",
+        "skillsItems": [
+          {
+            "iconName": "JavaScriptIcon",
+            "name": "JavaScript"
+          },
+          {
+            "iconName": "ReactJsIcon",
+            "name": "React Js"
+          },
+          {
+            "iconName": "TypescriptIcon",
+            "name": "Typescript"
+          },
+          {
+            "iconName": "Css3Icon",
+            "name": "CSS3"
+          }
+        ]
+      }
+    },
+    {
+      "jobId": "DMPTRJD06/25",
+      "jobTitle": "React Js Developer",
+      "companyLogo": "DynamicsMonkLogo",
+      "companyName": "Dynamics Monk Pvt Ltd",
+      "workingFrom": "06/2021",
+      "workingTo": "Present",
+      "description": "Responsilibites & impact:",
+      "responsibilites": [
+        "Produce good quality UI as same as designs in order to achieve best user experience.",
+        "Implement best practices on the web app that comply with w3c accessibility standards and Google SEO guidelines to improve search index results by 100%.",
+        "Analyzing component functionality & Integrate GA events to components to send user activities on Google Analytics.",
+        "Reviewing team members codes, and create in-depth bugs reports along with solutions.",
+        "Successfully implemented Micro-frontend for web apps using Module Federations along with mobile app using Cordova.",
+        "Refactored Webflow JavaScript codes in order to remove Webflow editor crashing issue which was affecting other teams to work on Webflow.",
+        "Enhanced code test coverage and helped team members to achieve test coverage up to 100%.",
+        "Train & mentoring new joiners for projects.",
+        "Resolved major negative user Experience flow issue for some web browsers to improve the user experience.",
+        "Built the automation script for QA to detect unwanted links on the website and reduced the time from 2 hours to 5 – 10 minutes."
+      ],
+      "skills": {
+        "title": "Skills:",
+        "skillsItems": [
+          {
+            "iconName": "JavaScriptIcon",
+            "name": "JavaScript"
+          },
+          {
+            "iconName": "ReactJsIcon",
+            "name": "React Js"
+          },
+          {
+            "iconName": "TypescriptIcon",
+            "name": "Typescript"
+          },
+          {
+            "iconName": "Css3Icon",
+            "name": "CSS3"
+          }
+        ]
+      }
+    }
+  ]
+}

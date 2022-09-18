@@ -7,7 +7,7 @@ export const NavBarContainer = styled.nav`
   background-color: ${({ theme }) => theme.colors.background.bg2};
   display: flex;
   align-items: center;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
 
