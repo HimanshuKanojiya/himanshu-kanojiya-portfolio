@@ -6,3 +6,7 @@ interface IMenuOverlay {
 interface ISideBarMenu {
   toggleHamburgerMenu: () => void;
 }
+
+interface ISocialIcons {
+  className: string;
+}

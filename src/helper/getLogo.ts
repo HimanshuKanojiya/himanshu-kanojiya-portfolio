@@ -4,9 +4,12 @@ import {
   TypescriptIcon,
   Css3Icon,
   DynamicsMonkLogo,
+  GithubIcon,
+  EmailIcon,
+  LinkedInIcon,
 } from "../assets/icons/iconsList";
 
-export const getSkillLogo = (iconName: GetIcons) => {
+export const getLogo = (iconName: GetIcons) => {
   switch (iconName) {
     case "JavaScriptIcon":
       return JavaScriptIcon;
@@ -22,6 +25,15 @@ export const getSkillLogo = (iconName: GetIcons) => {
 
     case "DynamicsMonkLogo":
       return DynamicsMonkLogo;
+
+    case "GithubIcon":
+      return GithubIcon;
+
+    case "EmailIcon":
+      return EmailIcon;
+
+    case "LinkedInIcon":
+      return LinkedInIcon;
 
     default:
       return JavaScriptIcon;

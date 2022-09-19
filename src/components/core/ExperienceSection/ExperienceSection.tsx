@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { getSkillLogo } from "../../../helper/getSkillLogo";
+import { getLogo } from "../../../helper/getLogo";
 import { ExperienceContainer } from "../../styles/ExperienceSection/ExperienceContainer";
 import { ExpandIcon, ExpandLessIcon } from "../../../assets/icons/iconsList";
 import Experiences from "../../../assets/jsons/experiences.json";
@@ -20,7 +20,7 @@ export const ExperienceSection: React.FC = () => {
           return (
             <div key={Experience.jobId} className="experienceItem">
               <img
-                src={getSkillLogo(Experience.companyLogo as GetIcons)}
+                src={getLogo(Experience.companyLogo as GetIcons)}
                 alt={Experience.companyName}
               />
               <h3 className="jobTitle">{Experience.jobTitle}</h3>
@@ -49,7 +49,7 @@ export const ExperienceSection: React.FC = () => {
                         return (
                           <li key={skill.name}>
                             <img
-                              src={getSkillLogo(skill.iconName as GetIcons)}
+                              src={getLogo(skill.iconName as GetIcons)}
                               alt={skill.name}
                             />
                             <p>{skill.name}</p>

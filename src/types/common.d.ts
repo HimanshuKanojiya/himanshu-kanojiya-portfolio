@@ -3,4 +3,7 @@ type GetIcons =
   | "ReactJsIcon"
   | "TypescriptIcon"
   | "Css3Icon"
-  | "DynamicsMonkLogo";
+  | "DynamicsMonkLogo"
+  | "GithubIcon"
+  | "EmailIcon"
+  | "LinkedInIcon";
