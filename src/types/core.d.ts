@@ -10,3 +10,13 @@ interface ISideBarMenu {
 interface ISocialIcons {
   className: string;
 }
+
+interface IResponsibilityList {
+  title: string;
+  responsibilites: string[];
+}
+
+interface ISkillsList {
+  title: string;
+  skills: { iconName: string; name: string }[];
+}

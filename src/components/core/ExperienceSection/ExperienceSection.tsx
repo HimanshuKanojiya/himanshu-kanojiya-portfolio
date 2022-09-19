@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { getLogo } from "../../../helper/getLogo";
 import { ExperienceContainer } from "../../styles/ExperienceSection/ExperienceContainer";
+import { ResponsibilityList } from "./ResponsibilityList";
+import { SkillsList } from "../SkillsList/SkillsList";
 import { ExpandIcon, ExpandLessIcon } from "../../../assets/icons/iconsList";
 import Experiences from "../../../assets/jsons/experiences.json";
 
@@ -32,32 +34,15 @@ export const ExperienceSection: React.FC = () => {
               </small>
               {currentExperienceVisible === Experience.jobId && (
                 <>
-                  <div className="jobResponsibilites">
-                    <p>{Experience.description}</p>
-                    <ol className="responsibilitiesList">
-                      {Experience.responsibilites.map(
-                        (responsibility, index) => {
-                          return <li key={index}>{responsibility}</li>;
-                        }
-                      )}
-                    </ol>
-                  </div>
-                  <div className="jobSkills">
-                    <strong>{Experience.skills.title}</strong>
-                    <ul>
-                      {Experience.skills.skillsItems.map((skill) => {
-                        return (
-                          <li key={skill.name}>
-                            <img
-                              src={getLogo(skill.iconName as GetIcons)}
-                              alt={skill.name}
-                            />
-                            <p>{skill.name}</p>
-                          </li>
-                        );
-                      })}
-                    </ul>
-                  </div>
+                  <ResponsibilityList
+                    title={Experience.description}
+                    responsibilites={Experience.responsibilites}
+                  />
+
+                  <SkillsList
+                    title={Experience.skills.title}
+                    skills={Experience.skills.skillsItems}
+                  />
                 </>
               )}
               <button

@@ -42,57 +42,6 @@ export const ExperienceContainer = styled.div`
         }
       }
 
-      .jobResponsibilites {
-        margin-top: ${({ theme }) => theme.spaces.s};
-        font-size: ${({ theme }) => theme.fontSize.mobile.body};
-        color: ${({ theme }) => theme.colors.texts.body};
-
-        p,
-        ol,
-        li {
-          color: inherit;
-          font-size: inherit;
-          line-height: ${({ theme }) => theme.lineHeight};
-        }
-
-        ol {
-          margin-top: ${({ theme }) => theme.spaces.xs};
-          margin-left: ${({ theme }) => theme.spaces.m};
-        }
-      }
-
-      .jobSkills {
-        margin-top: ${({ theme }) => theme.spaces.s};
-
-        & strong {
-          font-family: "IBM Plex Sans", sans-serif;
-          font-size: 20px;
-          line-height: ${({ theme }) => theme.lineHeight};
-          color: ${({ theme }) => theme.colors.texts.body};
-          font-weight: 600;
-        }
-
-        & ul {
-          display: flex;
-          align-items: center;
-          flex-wrap: wrap;
-          margin-top: ${({ theme }) => theme.spaces.xs};
-          gap: ${({ theme }) => theme.spaces.s};
-
-          & li {
-            display: flex;
-            align-items: center;
-            gap: ${({ theme }) => theme.spaces.xs};
-
-            & p {
-              font-family: "Chakra Petch", sans-serif;
-              font-size: ${({ theme }) => theme.fontSize.mobile.label};
-              color: ${({ theme }) => theme.colors.texts.label};
-            }
-          }
-        }
-      }
-
       .seeMoreAboutThisJob {
         display: flex;
         font-family: "Chakra Petch", sans-serif;
