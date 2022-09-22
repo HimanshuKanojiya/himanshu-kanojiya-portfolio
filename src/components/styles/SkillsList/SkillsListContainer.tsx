@@ -30,4 +30,24 @@ export const SkillsListContainer = styled.div`
       }
     }
   }
+
+  @media screen and (min-width: 686px) {
+    & strong {
+      font-size: 24px;
+    }
+
+    & ul {
+      margin-top: ${({ theme }) => theme.spaces.s};
+
+      & li {
+        img {
+          width: 40px;
+          height: 40px;
+        }
+        p {
+          font-size: ${({ theme }) => theme.fontSize.desktop.label};
+        }
+      }
+    }
+  }
 `;

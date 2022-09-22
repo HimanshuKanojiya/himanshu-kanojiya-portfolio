@@ -9,70 +9,40 @@ export const ExperienceContainer = styled.div`
   .experienceTitle {
     font-size: ${({ theme }) => theme.fontSize.mobile.h2};
     color: ${({ theme }) => theme.colors.texts.headers};
+    margin-bottom: ${({ theme }) => theme.spaces.l};
   }
 
   .experienceItems {
-    margin-top: ${({ theme }) => theme.spaces.l};
-
-    .experienceItem {
-      width: 100%;
-      min-height: 170px;
-      background-color: ${({ theme }) => theme.colors.background.bg3};
-      padding: ${({ theme }) => theme.spaces.s};
+    & > div {
       margin-bottom: ${({ theme }) => theme.spaces.m};
-      border-radius: 2px;
-
-      .jobTitle {
-        color: ${({ theme }) => theme.colors.texts.headers};
-        font-size: ${({ theme }) => theme.fontSize.mobile.h3};
-        margin-top: ${({ theme }) => theme.spaces.xs};
-      }
-
-      .companyName {
-        font-family: "Chakra Petch", sans-serif;
-        font-size: 14px;
-        color: ${({ theme }) => theme.colors.texts.headers};
-        opacity: 80%;
-
-        & span {
-          font-family: inherit;
-          font-size: inherit;
-          color: inherit;
-          opacity: 70%;
-        }
-      }
-
-      .seeMoreAboutThisJob {
-        display: flex;
-        font-family: "Chakra Petch", sans-serif;
-        font-size: ${({ theme }) => theme.fontSize.mobile.label};
-        background-color: transparent;
-        color: ${({ theme }) => theme.colors.texts.highlight};
-        margin-top: ${({ theme }) => theme.spaces.xs};
-        cursor: pointer;
-        margin-left: auto;
-
-        & p {
-          display: flex;
-          align-items: center;
-          font-size: inherit;
-          font-family: inherit;
-          color: inherit;
-        }
-      }
     }
-
-    .experienceItem:last-of-type {
-      margin-bottom: 0;
+    & > div:last-of-type {
+      margin: 0;
     }
   }
 
   @media screen and (min-width: 686px) {
     margin-top: ${({ theme }) => theme.spaces.xxl5};
     padding-inline: ${({ theme }) => theme.spaces.l};
+    max-width: 768px;
 
     .experienceTitle {
       font-size: ${({ theme }) => theme.fontSize.desktop.h2};
+      margin-bottom: ${({ theme }) => theme.spaces.xl};
     }
+
+    .experienceItems {
+      & > div {
+        margin-bottom: ${({ theme }) => theme.spaces.m};
+      }
+      & > div:last-of-type {
+        margin: 0;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1336px) {
+    padding-inline: 196px;
+    max-width: 100%;
   }
 `;
