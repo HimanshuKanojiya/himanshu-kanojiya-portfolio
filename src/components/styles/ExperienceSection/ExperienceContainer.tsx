@@ -44,5 +44,10 @@ export const ExperienceContainer = styled.div`
   @media screen and (min-width: 1336px) {
     padding-inline: 196px;
     max-width: 100%;
+
+    .experienceSection {
+      display: flex;
+      gap: ${({ theme }) => theme.spaces.xl};
+    }
   }
 `;

@@ -98,4 +98,11 @@ export const ExperienceCardContainer = styled.div`
       }
     }
   }
+
+  @media screen and (min-width: 1336px) {
+    .experienceItem {
+      background-color: transparent;
+      padding: 0;
+    }
+  }
 `;

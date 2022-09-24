@@ -41,3 +41,24 @@ interface IExperienceCard {
     };
   };
 }
+
+interface IExperienceMenu {
+  Experience: {
+    jobId: string;
+    jobTitle: string;
+    companyLogo: string;
+    companyName: string;
+    workingFrom: string;
+    workingTo: string;
+    description: string;
+    responsibilites: string[];
+    skills: {
+      title: string;
+      skillsItems: {
+        iconName: string;
+        name: string;
+      }[];
+    };
+  }[];
+  showAboutThisCompany: (jobId: string) => void;
+}
