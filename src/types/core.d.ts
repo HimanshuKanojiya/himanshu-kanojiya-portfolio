@@ -63,3 +63,9 @@ interface IExperienceMenu {
   showAboutThisCompany: (jobId: string) => void;
   currentSelectedCompany: string;
 }
+
+interface IContentExtendButton {
+  showMore: boolean;
+  handleShowMore: () => void;
+  isDesktop?: boolean;
+}

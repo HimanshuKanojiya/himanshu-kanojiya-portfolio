@@ -3,7 +3,7 @@ import { ExperienceCardContainer } from "../../styles/ExperienceSection/Experien
 import { getLogo } from "../../../helper/getLogo";
 import { SkillsList } from "../SkillsList/SkillsList";
 import { useMediaQuery } from "../../../helper/useMediaQuery";
-import { ExpandIcon, ExpandLessIcon } from "../../../assets/icons/iconsList";
+import { ContentExtendButton } from "../Buttons/ContentExtendButton";
 
 export const ExperienceCard: React.FC<IExperienceCard> = ({ Experience }) => {
   const [showMore, setShowMore] = useState<boolean>(false);
@@ -54,23 +54,11 @@ export const ExperienceCard: React.FC<IExperienceCard> = ({ Experience }) => {
             skills={Experience.skills.skillsItems}
           />
         )}
-        <button
-          className="seeMoreAboutThisJob"
-          onClick={() => setShowMore((prevState) => !prevState)}
-          onKeyDown={() => setShowMore((prevState) => !prevState)}
-        >
-          {showMore && !isDesktop && (
-            <p>
-              See Less <img src={ExpandLessIcon} alt="See Less" />
-            </p>
-          )}
-
-          {!showMore && !isDesktop && (
-            <p>
-              See More <img src={ExpandIcon} alt="See More" />
-            </p>
-          )}
-        </button>
+        <ContentExtendButton
+          handleShowMore={() => setShowMore((prevState) => !prevState)}
+          showMore={showMore}
+          isDesktop={isDesktop}
+        />
       </div>
     </ExperienceCardContainer>
   );

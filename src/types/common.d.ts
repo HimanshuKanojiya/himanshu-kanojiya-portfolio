@@ -6,4 +6,7 @@ type GetIcons =
   | "DynamicsMonkLogo"
   | "GithubIcon"
   | "EmailIcon"
-  | "LinkedInIcon";
+  | "LinkedInIcon"
+  | "FrontEndSkillIcon"
+  | "ExpandLessIcon"
+  | "ExpandIcon";
