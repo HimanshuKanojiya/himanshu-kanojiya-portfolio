@@ -4,13 +4,21 @@ import { ExperienceMenuContainer } from "../../styles/ExperienceSection/Experien
 export const ExperienceMenu: React.FC<IExperienceMenu> = ({
   Experience,
   showAboutThisCompany,
+  currentSelectedCompany,
 }) => {
   return (
     <ExperienceMenuContainer>
       <ul className="leftNavigationMenu">
         {Experience.map((experience) => {
           return (
-            <li>
+            <li
+              key={experience.jobId}
+              className={`companyList ${
+                currentSelectedCompany === experience.jobId
+                  ? "selectedCompany"
+                  : ""
+              }`}
+            >
               <a
                 href="/"
                 onClick={(event) => {

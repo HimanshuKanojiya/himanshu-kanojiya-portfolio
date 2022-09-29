@@ -12,17 +12,21 @@ export const ExperienceCard: React.FC<IExperienceCard> = ({ Experience }) => {
   return (
     <ExperienceCardContainer>
       <div key={Experience.jobId} className="experienceItem">
-        <img
-          src={getLogo(Experience.companyLogo as GetIcons)}
-          alt={Experience.companyName}
-        />
-        <h3 className="jobTitle">{Experience.jobTitle}</h3>
-        <small className="companyName">
-          {Experience.companyName}{" "}
-          <span>
-            (from {Experience.workingFrom} to {Experience.workingTo})
-          </span>
-        </small>
+        <div className="companyDetails">
+          <img
+            src={getLogo(Experience.companyLogo as GetIcons)}
+            alt={Experience.companyName}
+          />
+          <div className="aboutCompany">
+            <h3 className="jobTitle">{Experience.jobTitle}</h3>
+            <small className="companyName">
+              {Experience.companyName}{" "}
+              <span>
+                (from {Experience.workingFrom} to {Experience.workingTo})
+              </span>
+            </small>
+          </div>
+        </div>
         <div className="responsibilities">
           <p>{Experience.description}</p>
           <ol className="responsibilitiesList">

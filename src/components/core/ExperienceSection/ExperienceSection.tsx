@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ExperienceContainer } from "../../styles/ExperienceSection/ExperienceContainer";
 import { ExperienceCard } from "./ExperienceCard";
 import { useMediaQuery } from "../../../helper/useMediaQuery";
@@ -10,8 +10,11 @@ export const ExperienceSection: React.FC = () => {
   const [experienceItems, setExperienceItems] = useState(
     Experiences.experienceItems
   );
+  const selectedItemRef = useRef("DMPTRJD06/21");
 
   const showAboutThisCompany = (jobId: string) => {
+    selectedItemRef.current = jobId;
+
     setExperienceItems(() => {
       return Experiences.experienceItems.filter(
         (experience) => experience.jobId === jobId
@@ -32,11 +35,14 @@ export const ExperienceSection: React.FC = () => {
           <ExperienceMenu
             Experience={Experiences.experienceItems}
             showAboutThisCompany={showAboutThisCompany}
+            currentSelectedCompany={selectedItemRef.current}
           />
         )}
         <div className="experienceItems">
           {experienceItems.map((experience) => {
-            return <ExperienceCard Experience={experience} />;
+            return (
+              <ExperienceCard key={experience.jobId} Experience={experience} />
+            );
           })}
         </div>
       </div>

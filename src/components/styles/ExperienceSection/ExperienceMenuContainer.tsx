@@ -17,7 +17,7 @@ export const ExperienceMenuContainer = styled.div`
     border-right-width: 2px;
     height: 100%;
 
-    & li,
+    & .companyList,
     a {
       color: inherit;
       font-size: inherit;
@@ -33,9 +33,12 @@ export const ExperienceMenuContainer = styled.div`
       padding-left: ${({ theme }) => theme.spaces.s};
     }
 
-    li:first-of-type {
+    .selectedCompany {
       color: ${({ theme }) => theme.colors.texts.highlight};
       background-color: ${({ theme }) => theme.colors.background.bg2};
+      border-right-style: solid;
+      border-right-color: ${({ theme }) => theme.colors.texts.highlight};
+      border-right-width: 2px;
     }
   }
 `;

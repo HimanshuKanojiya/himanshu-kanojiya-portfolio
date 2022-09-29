@@ -9,23 +9,27 @@ export const ExperienceCardContainer = styled.div`
     margin-bottom: ${({ theme }) => theme.spaces.m};
     border-radius: 2px;
 
-    .jobTitle {
-      color: ${({ theme }) => theme.colors.texts.headers};
-      font-size: ${({ theme }) => theme.fontSize.mobile.h3};
-      margin-top: ${({ theme }) => theme.spaces.xs};
-    }
+    .companyDetails {
+      .aboutCompany {
+        .jobTitle {
+          color: ${({ theme }) => theme.colors.texts.headers};
+          font-size: ${({ theme }) => theme.fontSize.mobile.h3};
+          margin-top: ${({ theme }) => theme.spaces.xs};
+        }
 
-    .companyName {
-      font-family: "Chakra Petch", sans-serif;
-      font-size: 14px;
-      color: ${({ theme }) => theme.colors.texts.headers};
-      opacity: 80%;
+        .companyName {
+          font-family: "Chakra Petch", sans-serif;
+          font-size: 14px;
+          color: ${({ theme }) => theme.colors.texts.headers};
+          opacity: 80%;
 
-      & span {
-        font-family: inherit;
-        font-size: inherit;
-        color: inherit;
-        opacity: 70%;
+          & span {
+            font-family: inherit;
+            font-size: inherit;
+            color: inherit;
+            opacity: 70%;
+          }
+        }
       }
     }
 
@@ -70,20 +74,24 @@ export const ExperienceCardContainer = styled.div`
 
   @media screen and (min-width: 686px) {
     .experienceItem {
-      & > img {
-        width: 72px;
-        height: 72px;
-      }
+      .companyDetails {
+        & > img {
+          width: 72px;
+          height: 72px;
+        }
 
-      .jobTitle {
-        font-size: ${({ theme }) => theme.fontSize.desktop.h3};
-      }
+        .aboutCompany {
+          .jobTitle {
+            font-size: ${({ theme }) => theme.fontSize.desktop.h3};
+          }
 
-      .companyName {
-        font-size: 18px;
+          .companyName {
+            font-size: 18px;
 
-        & span {
-          font-size: 18px;
+            & span {
+              font-size: 18px;
+            }
+          }
         }
       }
 
@@ -103,6 +111,20 @@ export const ExperienceCardContainer = styled.div`
     .experienceItem {
       background-color: transparent;
       padding: 0;
+
+      .companyDetails {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .aboutCompany {
+          margin-left: ${({ theme }) => theme.spaces.m};
+
+          .jobTitle {
+            margin: 0;
+          }
+        }
+      }
     }
   }
 `;

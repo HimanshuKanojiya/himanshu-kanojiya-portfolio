@@ -61,4 +61,5 @@ interface IExperienceMenu {
     };
   }[];
   showAboutThisCompany: (jobId: string) => void;
+  currentSelectedCompany: string;
 }
