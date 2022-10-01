@@ -31,6 +31,11 @@ export const SkillsListContainer = styled.div`
     }
   }
 
+  & .column {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   @media screen and (min-width: 686px) {
     & strong {
       font-size: 24px;

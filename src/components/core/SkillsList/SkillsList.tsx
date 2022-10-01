@@ -2,11 +2,15 @@ import React from "react";
 import { SkillsListContainer } from "../../styles/SkillsList/SkillsListContainer";
 import { getLogo } from "../../../helper/getLogo";
 
-export const SkillsList: React.FC<ISkillsList> = ({ title, skills }) => {
+export const SkillsList: React.FC<ISkillsList> = ({
+  title,
+  skills,
+  layout = "auto",
+}) => {
   return (
     <SkillsListContainer>
-      <strong>{title}</strong>
-      <ul>
+      {title && <strong>{title}</strong>}
+      <ul className={layout === "auto" ? "" : "column"}>
         {skills.map((skill) => {
           return (
             <li key={skill.name}>

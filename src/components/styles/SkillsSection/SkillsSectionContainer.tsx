@@ -13,7 +13,8 @@ export const SkillsSectionContainer = styled.section`
   }
 
   .skillsList {
-    margin-top: ${({ theme }) => theme.spaces.xl};
+    display: flex;
+    flex-wrap: wrap;
   }
 
   @media screen and (min-width: 686px) {
