@@ -15,6 +15,7 @@ export const SkillsSectionContainer = styled.section`
   .skillsList {
     display: flex;
     flex-wrap: wrap;
+    gap: ${({ theme }) => theme.spaces.m};
   }
 
   @media screen and (min-width: 686px) {
@@ -26,10 +27,19 @@ export const SkillsSectionContainer = styled.section`
       font-size: ${({ theme }) => theme.fontSize.desktop.h2};
       margin-bottom: ${({ theme }) => theme.spaces.xl};
     }
+
+    .skillsList {
+      flex-wrap: wrap;
+      gap: ${({ theme }) => theme.spaces.l};
+    }
   }
 
   @media screen and (min-width: 1336px) {
     padding-inline: 196px;
     max-width: 100%;
+
+    .skillsList {
+      flex-wrap: nowrap;
+    }
   }
 `;

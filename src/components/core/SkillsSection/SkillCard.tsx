@@ -21,12 +21,12 @@ export const SkillCard: React.FC<ISkillCard> = ({
         <p className={`aboutSkill ${!showMore ? "readMoreAboutSKill" : ""}`}>
           {skillDescription}
         </p>
+        {showMore && <SkillsList layout="column" skills={skillsItems} />}
+        <ContentExtendButton
+          showMore={showMore}
+          handleShowMore={() => setShowMore((prevState) => !prevState)}
+        />
       </div>
-      {showMore && <SkillsList layout="column" skills={skillsItems} />}
-      <ContentExtendButton
-        showMore={showMore}
-        handleShowMore={() => setShowMore((prevState) => !prevState)}
-      />
     </SkillCardContainer>
   );
 };

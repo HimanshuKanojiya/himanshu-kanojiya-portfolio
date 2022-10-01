@@ -24,6 +24,30 @@
           "name": "CSS3"
         }
       ]
+    },
+    {
+      "skillId": "skillId02",
+      "skillLogo": "FrontEndSkillIcon",
+      "skillTitle": "Front-end Skills",
+      "skillDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed euluctus dui pulvinar est libero, scelerisque pellentesque.",
+      "skillsItems": [
+        {
+          "iconName": "JavaScriptIcon",
+          "name": "JavaScript"
+        },
+        {
+          "iconName": "ReactJsIcon",
+          "name": "React Js"
+        },
+        {
+          "iconName": "TypescriptIcon",
+          "name": "Typescript"
+        },
+        {
+          "iconName": "Css3Icon",
+          "name": "CSS3"
+        }
+      ]
     }
   ]
 }
