@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeroSectionContainer = styled.div`
+export const HeroSectionContainer = styled.section`
   height: 100%;
   display: flex;
   flex-direction: column;

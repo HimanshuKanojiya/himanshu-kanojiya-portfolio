@@ -10,6 +10,7 @@ import ReactJsIcon from "./ReactJsIcon.svg";
 import TypescriptIcon from "./TypescriptIcon.svg";
 import Css3Icon from "./Css3Icon.svg";
 import ExpandLessIcon from "./ExpandLessIcon.svg";
+import FrontEndSkillIcon from "./FrontEndSkillIcon.svg";
 
 export {
   HamburgerIcon,
@@ -24,4 +25,5 @@ export {
   TypescriptIcon,
   Css3Icon,
   ExpandLessIcon,
+  FrontEndSkillIcon,
 };

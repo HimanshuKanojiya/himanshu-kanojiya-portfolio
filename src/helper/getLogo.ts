@@ -7,6 +7,9 @@ import {
   GithubIcon,
   EmailIcon,
   LinkedInIcon,
+  FrontEndSkillIcon,
+  ExpandLessIcon,
+  ExpandIcon,
 } from "../assets/icons/iconsList";
 
 export const getLogo = (iconName: GetIcons) => {
@@ -34,6 +37,15 @@ export const getLogo = (iconName: GetIcons) => {
 
     case "LinkedInIcon":
       return LinkedInIcon;
+
+    case "FrontEndSkillIcon":
+      return FrontEndSkillIcon;
+
+    case "ExpandLessIcon":
+      return ExpandLessIcon;
+
+    case "ExpandIcon":
+      return ExpandIcon;
 
     default:
       return JavaScriptIcon;

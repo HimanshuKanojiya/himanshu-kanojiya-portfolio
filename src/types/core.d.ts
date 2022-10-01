@@ -18,7 +18,8 @@ interface IResponsibilityList {
 }
 
 interface ISkillsList {
-  title: string;
+  title?: string;
+  layout?: "auto" | "column";
   skills: { iconName: string; name: string }[];
 }
 
@@ -62,4 +63,20 @@ interface IExperienceMenu {
   }[];
   showAboutThisCompany: (jobId: string) => void;
   currentSelectedCompany: string;
+}
+
+interface IContentExtendButton {
+  showMore: boolean;
+  handleShowMore: () => void;
+  isDesktop?: boolean;
+}
+
+interface ISkillCard {
+  skillLogo: string;
+  skillTitle: string;
+  skillDescription: string;
+  skillsItems: {
+    iconName: string;
+    name: string;
+  }[];
 }
