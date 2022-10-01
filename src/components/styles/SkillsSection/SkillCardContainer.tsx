@@ -3,15 +3,15 @@ import styled from "styled-components";
 export const SkillCardContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.background.bg2};
   padding: ${({ theme }) => theme.spaces.s};
+  max-width: 560px;
+  height: fit-content;
 
   .skillLogo {
-    width: 40px;
-    height: 40px;
     margin-bottom: ${({ theme }) => theme.spaces.s};
 
     & img {
-      width: 100%;
-      height: 100%;
+      width: 40px;
+      height: 40px;
     }
   }
 
@@ -34,6 +34,36 @@ export const SkillCardContainer = styled.div`
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
+    }
+  }
+
+  @media screen and (min-width: 686px) {
+    padding: ${({ theme }) => theme.spaces.l};
+    display: flex;
+
+    .skillLogo {
+      margin: 0;
+      margin-right: ${({ theme }) => theme.spaces.s};
+
+      img {
+        width: 61px;
+        height: 61px;
+      }
+    }
+
+    .skillContent {
+      display: flex;
+      flex-direction: column;
+      margin-top: 13px;
+
+      .skillHeading {
+        font-size: ${({ theme }) => theme.fontSize.desktop.h3};
+      }
+
+      .aboutSkill {
+        font-size: ${({ theme }) => theme.fontSize.desktop.body};
+        margin-bottom: ${({ theme }) => theme.spaces.xs};
+      }
     }
   }
 `;
