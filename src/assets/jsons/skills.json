@@ -102,6 +102,10 @@
         {
           "iconName": "JiraScrumSkillIcon",
           "name": "Jira & Scrum"
+        },
+        {
+          "iconName": "GithubSkillIcon",
+          "name": "Github"
         }
       ]
     }
