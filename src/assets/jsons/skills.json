@@ -22,30 +22,86 @@
         {
           "iconName": "Css3Icon",
           "name": "CSS3"
+        },
+        {
+          "iconName": "HtmlSkillIcon",
+          "name": "Html"
+        },
+        {
+          "iconName": "SassSkillIcon",
+          "name": "Sass"
+        },
+        {
+          "iconName": "StyledCompSkillIcon",
+          "name": "Styled Components"
+        },
+        {
+          "iconName": "ChakraUISkillIcon",
+          "name": "Chakra UI"
+        },
+        {
+          "iconName": "ReduxToolkitSkillIcon",
+          "name": "Redux & Toolkit"
+        },
+        {
+          "iconName": "TailwindSkillIcon",
+          "name": "Tailwind CSS"
+        },
+        {
+          "iconName": "WebpackSkillIcon",
+          "name": "Webpack"
+        },
+        {
+          "iconName": "NodeJsSkillIcon",
+          "name": "Node Js"
         }
       ]
     },
     {
       "skillId": "skillId02",
-      "skillLogo": "FrontEndSkillIcon",
-      "skillTitle": "Front-end Skills",
+      "skillLogo": "UIDesignSkillIcon",
+      "skillTitle": "UI Designing Skills",
       "skillDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed euluctus dui pulvinar est libero, scelerisque pellentesque.",
       "skillsItems": [
         {
-          "iconName": "JavaScriptIcon",
-          "name": "JavaScript"
+          "iconName": "FigmaSkillIcon",
+          "name": "Figma"
+        }
+      ]
+    },
+    {
+      "skillId": "skillId03",
+      "skillLogo": "TestingSkillIcon",
+      "skillTitle": "Testing",
+      "skillDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed euluctus dui pulvinar est libero, scelerisque pellentesque.",
+      "skillsItems": [
+        {
+          "iconName": "JestSkillIcon",
+          "name": "Jest"
         },
         {
-          "iconName": "ReactJsIcon",
-          "name": "React Js"
+          "iconName": "EnzymeSkillIcon",
+          "name": "Enzyme"
         },
         {
-          "iconName": "TypescriptIcon",
-          "name": "Typescript"
+          "iconName": "RtlSkillIcon",
+          "name": "React Testing Library"
+        }
+      ]
+    },
+    {
+      "skillId": "skillId04",
+      "skillLogo": "ToolOtherSkillIcon",
+      "skillTitle": "Tools & Other's",
+      "skillDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed euluctus dui pulvinar est libero, scelerisque pellentesque.",
+      "skillsItems": [
+        {
+          "iconName": "BitbucketSkillIcon",
+          "name": "Bitbucket"
         },
         {
-          "iconName": "Css3Icon",
-          "name": "CSS3"
+          "iconName": "JiraScrumSkillIcon",
+          "name": "Jira & Scrum"
         }
       ]
     }

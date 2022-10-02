@@ -10,6 +10,25 @@ import {
   FrontEndSkillIcon,
   ExpandLessIcon,
   ExpandIcon,
+  UIDesignSkillIcon,
+  TestingSkillIcon,
+  ToolOtherSkillIcon,
+  FigmaSkillIcon,
+  JestSkillIcon,
+  ChakraUISkillIcon,
+  EnzymeSkillIcon,
+  FirebaseSkillIcon,
+  GithubSkillIcon,
+  HtmlSkillIcon,
+  JiraScrumSkillIcon,
+  NodeJsSkillIcon,
+  ReduxToolkitSkillIcon,
+  RtlSkillIcon,
+  SassSkillIcon,
+  StyledCompSkillIcon,
+  TailwindSkillIcon,
+  WebpackSkillIcon,
+  BitbucketSkillIcon,
 } from "../assets/icons/iconsList";
 
 export const getLogo = (iconName: GetIcons) => {
@@ -46,6 +65,63 @@ export const getLogo = (iconName: GetIcons) => {
 
     case "ExpandIcon":
       return ExpandIcon;
+
+    case "UIDesignSkillIcon":
+      return UIDesignSkillIcon;
+
+    case "TestingSkillIcon":
+      return TestingSkillIcon;
+
+    case "ToolOtherSkillIcon":
+      return ToolOtherSkillIcon;
+
+    case "FigmaSkillIcon":
+      return FigmaSkillIcon;
+
+    case "JestSkillIcon":
+      return JestSkillIcon;
+
+    case "ChakraUISkillIcon":
+      return ChakraUISkillIcon;
+
+    case "EnzymeSkillIcon":
+      return EnzymeSkillIcon;
+
+    case "FirebaseSKillIcon":
+      return FirebaseSkillIcon;
+
+    case "GithubSkillIcon":
+      return GithubSkillIcon;
+
+    case "HtmlSkillIcon":
+      return HtmlSkillIcon;
+
+    case "JiraScrumSkillIcon":
+      return JiraScrumSkillIcon;
+
+    case "NodeJsSkillIcon":
+      return NodeJsSkillIcon;
+
+    case "ReduxToolkitSkillIcon":
+      return ReduxToolkitSkillIcon;
+
+    case "RtlSkillIcon":
+      return RtlSkillIcon;
+
+    case "SassSkillIcon":
+      return SassSkillIcon;
+
+    case "StyledCompSkillIcon":
+      return StyledCompSkillIcon;
+
+    case "TailwindSKillIcon":
+      return TailwindSkillIcon;
+
+    case "WebpackSkillIcon":
+      return WebpackSkillIcon;
+
+    case "BitbucketSkillIcon":
+      return BitbucketSkillIcon;
 
     default:
       return JavaScriptIcon;
