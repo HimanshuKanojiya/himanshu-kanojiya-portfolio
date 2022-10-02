@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SkillCardContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.background.bg2};
   padding: ${({ theme }) => theme.spaces.s};
-  max-width: 560px;
+  width: 560px;
   height: fit-content;
 
   .skillLogo {
@@ -63,6 +63,15 @@ export const SkillCardContainer = styled.div`
       .aboutSkill {
         font-size: ${({ theme }) => theme.fontSize.desktop.body};
         margin-bottom: ${({ theme }) => theme.spaces.xs};
+      }
+
+      .readMoreAboutSKill {
+        display: -webkit-box;
+        line-clamp: 4;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
   }

@@ -39,7 +39,10 @@ export const SkillsSectionContainer = styled.section`
     max-width: 100%;
 
     .skillsList {
-      flex-wrap: nowrap;
+      //flex-wrap: nowrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: ${({ theme }) => theme.spaces.l};
     }
   }
 `;
