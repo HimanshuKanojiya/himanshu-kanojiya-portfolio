@@ -1,5 +1,7 @@
 import React from "react";
+
 import { SkillsListContainer } from "../../styles/SkillsList/SkillsListContainer";
+
 import { getLogo } from "../../../helper/getLogo";
 
 export const SkillsList: React.FC<ISkillsList> = ({

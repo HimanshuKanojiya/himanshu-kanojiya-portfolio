@@ -30,6 +30,8 @@ import StyledCompSkillIcon from "./StyledCompSkillIcon.svg";
 import TailwindSkillIcon from "./TailwindSkillIcon.svg";
 import WebpackSkillIcon from "./WebpackSkillIcon.svg";
 import BitbucketSkillIcon from "./BitbucketSkillIcon.svg";
+import BlogsSampleImage from "./BlogsSampleImage.png";
+import ExternalLinkIcon from "./ExternalLinkIcon.svg";
 
 export {
   HamburgerIcon,
@@ -64,4 +66,6 @@ export {
   TailwindSkillIcon,
   WebpackSkillIcon,
   BitbucketSkillIcon,
+  BlogsSampleImage,
+  ExternalLinkIcon,
 };

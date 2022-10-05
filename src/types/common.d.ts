@@ -29,4 +29,6 @@ type GetIcons =
   | "TailwindSKillIcon"
   | "ToolOtherSkillIcon"
   | "WebpackSkillIcon"
-  | "BitbucketSkillIcon";
+  | "BitbucketSkillIcon"
+  | "BlogsSampleImage"
+  | "ExternalLinkIcon";

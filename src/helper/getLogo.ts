@@ -29,6 +29,8 @@ import {
   TailwindSkillIcon,
   WebpackSkillIcon,
   BitbucketSkillIcon,
+  BlogsSampleImage,
+  ExternalLinkIcon,
 } from "../assets/icons/iconsList";
 
 export const getLogo = (iconName: GetIcons) => {
@@ -122,6 +124,12 @@ export const getLogo = (iconName: GetIcons) => {
 
     case "BitbucketSkillIcon":
       return BitbucketSkillIcon;
+
+    case "BlogsSampleImage":
+      return BlogsSampleImage;
+
+    case "ExternalLinkIcon":
+      return ExternalLinkIcon;
 
     default:
       return JavaScriptIcon;
