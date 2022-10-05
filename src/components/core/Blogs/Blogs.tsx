@@ -20,6 +20,7 @@ export const Blogs: React.FC = () => {
                 alt={blog.title}
               />
               <small>{blog.publishedOn}</small>
+              <h3 className="blog-title">{blog.title}</h3>
               <p className="blog-description">{blog.description}</p>
               <a className="blog-cta" href={blog.link}>
                 Read More
