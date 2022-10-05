@@ -1,4 +1,34 @@
 {
   "title": "BLOGS",
-  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consectetur at fuga exercitationem harum nam officiis ipsum corporis, culpa cumque."
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem consectetur at fuga exercitationem harum nam officiis ipsum corporis, culpa cumque.",
+  "blogs": [
+    {
+      "id": "blogs1",
+      "title": "Big O Time complexities of JavaScript Object, arrays, and their methods",
+      "publishedOn": "GeeksforGeeks",
+      "description": "An object is a data container, where the collection of properties save in key-value pair format between the curly braces {}.",
+      "link": "https://dev.to/himanshukanojiya/big-o-time-complexities-of-javascript-object-arrays-and-their-methods-5gpk"
+    },
+    {
+      "id": "blogs2",
+      "title": "Big O Time complexities of JavaScript Object, arrays, and their methods",
+      "publishedOn": "GeeksforGeeks",
+      "description": "An object is a data container, where the collection of properties save in key-value pair format between the curly braces {}.",
+      "link": "https://dev.to/himanshukanojiya/big-o-time-complexities-of-javascript-object-arrays-and-their-methods-5gpk"
+    },
+    {
+      "id": "blogs3",
+      "title": "Big O Time complexities of JavaScript Object, arrays, and their methods",
+      "publishedOn": "GeeksforGeeks",
+      "description": "An object is a data container, where the collection of properties save in key-value pair format between the curly braces {}.",
+      "link": "https://dev.to/himanshukanojiya/big-o-time-complexities-of-javascript-object-arrays-and-their-methods-5gpk"
+    },
+    {
+      "id": "blogs4",
+      "title": "Big O Time complexities of JavaScript Object, arrays, and their methods",
+      "publishedOn": "GeeksforGeeks",
+      "description": "An object is a data container, where the collection of properties save in key-value pair format between the curly braces {}.",
+      "link": "https://dev.to/himanshukanojiya/big-o-time-complexities-of-javascript-object-arrays-and-their-methods-5gpk"
+    }
+  ]
 }
