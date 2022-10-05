@@ -40,10 +40,28 @@ export const BlogsContainer = styled.section`
         margin-bottom: ${({ theme }) => theme.spaces.xxs};
       }
 
+      .blog-title {
+        font-size: ${({ theme }) => theme.fontSize.mobile.h3};
+        color: ${({ theme }) => theme.colors.texts.headers};
+        margin-bottom: ${({ theme }) => theme.spaces.xs};
+        display: -webkit-box;
+        line-clamp: 2;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
       & .blog-description {
         font-size: ${({ theme }) => theme.fontSize.mobile.body};
         color: ${({ theme }) => theme.colors.texts.body};
         margin-bottom: ${({ theme }) => theme.spaces.s};
+        display: -webkit-box;
+        line-clamp: 3;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       & .blog-cta {
