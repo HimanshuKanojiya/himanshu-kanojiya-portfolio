@@ -1,4 +1,5 @@
 import React from "react";
+
 import { getLogo } from "../../../helper/getLogo";
 
 export const SocialIcons: React.FC<ISocialIcons> = ({ className }) => {

@@ -1,7 +1,9 @@
 import React from "react";
-import { SkillCard } from "./SkillCard";
-import skills from "../../../assets/jsons/skills.json";
+
 import { SkillsSectionContainer } from "../../styles/SkillsSection/SkillsSectionContainer";
+import { SkillCard } from "./SkillCard";
+
+import skills from "../../../assets/jsons/skills.json";
 
 export const SkillsSection: React.FC = () => {
   return (

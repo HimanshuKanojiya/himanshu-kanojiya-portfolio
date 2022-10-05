@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ExperienceContainer = styled.section`
   width: 100%;
-  height: 100%;
+  height: 100vh;
   margin-top: ${({ theme }) => theme.spaces.xl};
   padding-inline: ${({ theme }) => theme.spaces.s};
 

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+
 import { ExperienceCardContainer } from "../../styles/ExperienceSection/ExperienceCardContainer";
-import { getLogo } from "../../../helper/getLogo";
 import { SkillsList } from "../SkillsList/SkillsList";
-import { useMediaQuery } from "../../../helper/useMediaQuery";
 import { ContentExtendButton } from "../Buttons/ContentExtendButton";
+
+import { getLogo } from "../../../helper/getLogo";
+import { useMediaQuery } from "../../../helper/useMediaQuery";
 
 export const ExperienceCard: React.FC<IExperienceCard> = ({ Experience }) => {
   const [showMore, setShowMore] = useState<boolean>(false);

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+
 import { SkillCardContainer } from "../../styles/SkillsSection/SkillCardContainer";
 import { SkillsList } from "../SkillsList/SkillsList";
-import { getLogo } from "../../../helper/getLogo";
 import { ContentExtendButton } from "../Buttons/ContentExtendButton";
+
+import { getLogo } from "../../../helper/getLogo";
 
 export const SkillCard: React.FC<ISkillCard> = ({
   skillLogo,

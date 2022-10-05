@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+
+import { SideBarMenuContainer } from "../../styles/SidebarMenu/SideBarMenuContainer";
+
 import menuItems from "../../../assets/jsons/menuItems.json";
 import { HamburgerCloseIcon } from "../../../assets/icons/iconsList";
-import { SideBarMenuContainer } from "../../styles/SidebarMenu/SideBarMenuContainer";
 
 export const SideBarMenu: React.FC<ISideBarMenu> = ({
   toggleHamburgerMenu,

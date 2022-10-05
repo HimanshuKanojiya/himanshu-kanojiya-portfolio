@@ -1,8 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
+
 import { ExperienceContainer } from "../../styles/ExperienceSection/ExperienceContainer";
 import { ExperienceCard } from "./ExperienceCard";
-import { useMediaQuery } from "../../../helper/useMediaQuery";
 import { ExperienceMenu } from "./ExperienceMenu";
+
+import { useMediaQuery } from "../../../helper/useMediaQuery";
+
 import Experiences from "../../../assets/jsons/experiences.json";
 
 export const ExperienceSection: React.FC = () => {

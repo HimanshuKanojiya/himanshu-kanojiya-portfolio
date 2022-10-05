@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+
 import { HamburgerIcon } from "../../../assets/icons/iconsList";
 import { NavBarContainer } from "../../styles/NavBar/NavBarContainer";
 import { MenuOverlay } from "../MenuOverlay/MenuOverlay";
+
 import { useMediaQuery } from "../../../helper/useMediaQuery";
+
 import menuItems from "../../../assets/jsons/menuItems.json";
 
 export const NavBar: React.FC = () => {

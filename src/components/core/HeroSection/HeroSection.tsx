@@ -1,7 +1,9 @@
 import React from "react";
+
 import { HeroSectionContainer } from "../../styles/HeroSection/HeroSectionContainer";
-import { useMediaQuery } from "../../../helper/useMediaQuery";
 import { SocialIcons } from "../SocialIcons/SocialIcons";
+
+import { useMediaQuery } from "../../../helper/useMediaQuery";
 
 export const HeroSection: React.FC = () => {
   const isDesktop = useMediaQuery("(min-width: 1336px)");
