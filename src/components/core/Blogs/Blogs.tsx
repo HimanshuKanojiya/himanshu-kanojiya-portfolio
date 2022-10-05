@@ -1,12 +1,13 @@
 import React from "react";
 
 import { BlogsContainer } from "../../styles/Blogs/BlogsContainer";
-import BlogsData from "../../../assets/jsons/Blogs.json";
+import blogsData from "../../../assets/jsons/Blogs.json";
 
 export const Blogs: React.FC = () => {
   return (
     <BlogsContainer>
-      <h2 className="blogs-container">{BlogsData.title}</h2>
+      <h2 className="blogs-container">{blogsData.title}</h2>
+      <p>{blogsData.description}</p>
     </BlogsContainer>
   );
 };

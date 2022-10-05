@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SkillsSectionContainer = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   margin-top: ${({ theme }) => theme.spaces.xl};
   padding-inline: ${({ theme }) => theme.spaces.s};
 

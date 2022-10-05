@@ -15,7 +15,7 @@ export const Home: React.FC = () => {
   const isDesktop = useMediaQuery("(min-width: 1336px)");
 
   return (
-    <>
+    <div>
       <NavBar />
       <HeroSection />
       {isDesktop &&
@@ -27,6 +27,6 @@ export const Home: React.FC = () => {
       <SkillsSection />
       <Blogs />
       {/* <Footer /> */}
-    </>
+    </div>
   );
 };
