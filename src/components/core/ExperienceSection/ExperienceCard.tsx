@@ -13,15 +13,15 @@ export const ExperienceCard: React.FC<IExperienceCard> = ({ Experience }) => {
 
   return (
     <ExperienceCardContainer>
-      <div key={Experience.jobId} className="experienceItem">
-        <div className="companyDetails">
+      <div key={Experience.jobId} className="experience-item">
+        <div className="company-details">
           <img
             src={getLogo(Experience.companyLogo as GetIcons)}
             alt={Experience.companyName}
           />
-          <div className="aboutCompany">
-            <h3 className="jobTitle">{Experience.jobTitle}</h3>
-            <small className="companyName">
+          <div className="about-company">
+            <h3 className="job-title">{Experience.jobTitle}</h3>
+            <small className="company-name">
               {Experience.companyName}{" "}
               <span>
                 (from {Experience.workingFrom} to {Experience.workingTo})
@@ -31,7 +31,7 @@ export const ExperienceCard: React.FC<IExperienceCard> = ({ Experience }) => {
         </div>
         <div className="responsibilities">
           <p>{Experience.description}</p>
-          <ol className="responsibilitiesList">
+          <ol className="responsibilities-list">
             <li>{Experience.responsibilites[0]}</li>
             {showMore &&
               Experience.responsibilites.map((responsibility, index) => {

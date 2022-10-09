@@ -22,9 +22,9 @@ export const SideBarMenu: React.FC<ISideBarMenu> = ({
 
   return (
     <SideBarMenuContainer>
-      <div className="hamburgerNav">
+      <div className="hamburger-nav">
         <button
-          className="hamburgerMenuIcon"
+          className="hamburger-menuIcon"
           onClick={toggleHamburgerMenu}
           onKeyDown={toggleHamburgerMenu}
           tabIndex={0}
@@ -32,14 +32,14 @@ export const SideBarMenu: React.FC<ISideBarMenu> = ({
           <img src={HamburgerCloseIcon} alt="menu-less" />
         </button>
       </div>
-      <nav className="sideBarMenu">
+      <nav className="sidebar-menu">
         <ul>
           {navMenuItems.map((navMenu) => {
             return (
-              <li className="sidebarMenuItem" key={navMenu.id}>
+              <li className="sidebar-menu-item" key={navMenu.id}>
                 <a
                   className={
-                    currentJumpId === navMenu.jumpId ? "activeLink" : ""
+                    currentJumpId === navMenu.jumpId ? "active-link" : ""
                   }
                   href={navMenu.jumpId}
                   onClick={jumpToContent}

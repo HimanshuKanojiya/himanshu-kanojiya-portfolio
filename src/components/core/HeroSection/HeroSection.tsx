@@ -10,18 +10,18 @@ export const HeroSection: React.FC = () => {
 
   return (
     <HeroSectionContainer>
-      {!isDesktop && <SocialIcons className="socialIcons" />}
-      <div className="heroContent">
-        <p className="contentSecondary">FRONT-END REACT JS DEVELOPER __</p>
-        <h1 className="contentHeading">I AM HIMANSHU KANOJIYA</h1>
-        <p className="contentDescription">
+      {!isDesktop && <SocialIcons className="social-icons" />}
+      <div className="hero-content">
+        <p className="content-secondary">FRONT-END REACT JS DEVELOPER __</p>
+        <h1 className="content-heading">I AM HIMANSHU KANOJIYA</h1>
+        <p className="content-description">
           A Passionate MERN Stack Software Developer. Having experience in
           building Websites using JavaScript, React JS, Next Js, Tailwind CSS,
           and Chakra UI.
         </p>
-        <div className="contentCTA">
-          <button className="contentPrimaryAction">HIRE NOW!</button>
-          <a className="contentSecondaryAction" href="/">
+        <div className="content-cta">
+          <button className="content-primary-action">HIRE NOW!</button>
+          <a className="content-secondary-action" href="/">
             Download Resume
           </a>
         </div>

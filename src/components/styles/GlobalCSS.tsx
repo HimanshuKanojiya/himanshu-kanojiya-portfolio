@@ -32,6 +32,10 @@ export const GlobalCSS = createGlobalStyle`
         position: relative;
     }
 
+    #root{
+        
+    }
+
     h1{
         color: ${({ theme }) => theme.colors.texts.mainHeading};
         font-family: var(--chakra-patch-font);

@@ -32,8 +32,8 @@ export const ExperienceSection: React.FC = () => {
 
   return (
     <ExperienceContainer>
-      <h2 className="experienceTitle">{Experiences.title}</h2>
-      <div className="experienceSection">
+      <h2 className="experience-title">{Experiences.title}</h2>
+      <div className="experience-section">
         {isDesktop && (
           <ExperienceMenu
             Experience={Experiences.experienceItems}
@@ -41,7 +41,7 @@ export const ExperienceSection: React.FC = () => {
             currentSelectedCompany={selectedItemRef.current}
           />
         )}
-        <div className="experienceItems">
+        <div className="experience-items">
           {experienceItems.map((experience) => {
             return (
               <ExperienceCard key={experience.jobId} Experience={experience} />

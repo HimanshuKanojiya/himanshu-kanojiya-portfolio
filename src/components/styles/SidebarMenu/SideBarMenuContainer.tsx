@@ -9,14 +9,14 @@ export const SideBarMenuContainer = styled.div`
   top: 0;
   z-index: 2;
 
-  .hamburgerNav {
+  .hamburger-nav {
     height: 50px;
     width: 100%;
     padding-inline: ${({ theme }) => theme.spaces.s};
     display: flex;
     align-items: center;
 
-    .hamburgerMenuIcon {
+    .hamburger-menu-icon {
       margin-left: auto;
       display: flex;
       align-items: center;
@@ -25,10 +25,10 @@ export const SideBarMenuContainer = styled.div`
     }
   }
 
-  .sideBarMenu {
+  .sidebar-menu {
     margin: ${({ theme }) => `${theme.spaces.xl} 0 0 ${theme.spaces.l}`};
 
-    .sidebarMenuItem {
+    .sidebar-menu-item {
       margin-bottom: ${({ theme }) => theme.spaces.m};
       list-style-type: none;
 
@@ -41,7 +41,7 @@ export const SideBarMenuContainer = styled.div`
         line-height: ${({ theme }) => theme.lineHeight};
       }
 
-      .activeLink {
+      .active-link {
         opacity: 100%;
         border-bottom-style: solid;
         border-bottom-width: 2px;
@@ -50,13 +50,13 @@ export const SideBarMenuContainer = styled.div`
       }
     }
 
-    .sidebarMenuItem:last-of-type {
+    .sidebar-menu-item:last-of-type {
       margin: 0;
     }
   }
 
   @media screen and (min-width: 686px) {
-    .hamburgerNav {
+    .hamburger-nav {
       padding-inline: ${({ theme }) => theme.spaces.l};
     }
   }

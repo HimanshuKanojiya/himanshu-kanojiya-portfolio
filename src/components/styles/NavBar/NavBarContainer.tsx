@@ -11,12 +11,12 @@ export const NavBarContainer = styled.nav`
   top: 0;
   left: 0;
 
-  .outerLogo {
+  .outer-logo {
     color: ${({ theme }) => theme.colors.texts.neutral};
     font-size: 18px;
     display: inline;
 
-    .innerLogo {
+    .inner-logo {
       display: inline;
       font-size: 18px;
       font-family: "Chakra Petch", sans-serif;
@@ -24,7 +24,7 @@ export const NavBarContainer = styled.nav`
     }
   }
 
-  .desktopMenu {
+  .desktop-menu {
     margin-left: auto;
 
     ul {
@@ -43,7 +43,7 @@ export const NavBarContainer = styled.nav`
           font-size: inherit;
         }
 
-        .activeLink {
+        .active-link {
           opacity: 100%;
           border-bottom-style: solid;
           border-bottom-width: 4px;
@@ -78,7 +78,7 @@ export const NavBarContainer = styled.nav`
     }
   }
 
-  .hamburgerMenuIcon {
+  .hamburger-menu-icon {
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -94,10 +94,10 @@ export const NavBarContainer = styled.nav`
     height: 60px;
     padding-inline: ${({ theme }) => theme.spaces.m};
 
-    .outerLogo {
+    .outer-logo {
       font-size: 20px;
 
-      .innerLogo {
+      .inner-logo {
         font-size: inherit;
       }
     }

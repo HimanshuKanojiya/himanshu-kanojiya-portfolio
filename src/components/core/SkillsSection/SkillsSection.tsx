@@ -8,8 +8,8 @@ import skills from "../../../assets/jsons/skills.json";
 export const SkillsSection: React.FC = () => {
   return (
     <SkillsSectionContainer>
-      <h2 className="skillTitle">{skills.title}</h2>
-      <div className="skillsList">
+      <h2 className="skill-title">{skills.title}</h2>
+      <div className="skills-list">
         {skills.skillItems.map((skill) => {
           return (
             <SkillCard

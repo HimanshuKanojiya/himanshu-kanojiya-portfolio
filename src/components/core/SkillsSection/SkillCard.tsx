@@ -15,12 +15,14 @@ export const SkillCard: React.FC<ISkillCard> = ({
   const [showMore, setShowMore] = useState<boolean>(false);
   return (
     <SkillCardContainer>
-      <div className="skillLogo">
+      <div className="skill-logo">
         <img src={getLogo(skillLogo as GetIcons)} alt={skillTitle} />
       </div>
-      <div className="skillContent">
-        <h3 className="skillHeading">{skillTitle}</h3>
-        <p className={`aboutSkill ${!showMore ? "readMoreAboutSKill" : ""}`}>
+      <div className="skill-content">
+        <h3 className="skill-heading">{skillTitle}</h3>
+        <p
+          className={`about-skill ${!showMore ? "read-more-about-sKill" : ""}`}
+        >
           {skillDescription}
         </p>
         {showMore && <SkillsList layout="column" skills={skillsItems} />}

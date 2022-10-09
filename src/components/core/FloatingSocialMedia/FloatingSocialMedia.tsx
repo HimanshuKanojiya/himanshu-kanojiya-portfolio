@@ -6,8 +6,8 @@ import { SocialIcons } from "../SocialIcons/SocialIcons";
 export const FloatingSocialMedia: React.FC = () => {
   return (
     <FloatingSocialMediaContainer>
-      <SocialIcons className="socialIcons" />
-      <div className="verticalBorder" />
+      <SocialIcons className="social-icons" />
+      <div className="vertical-border" />
     </FloatingSocialMediaContainer>
   );
 };
