@@ -24,7 +24,7 @@ export const SideBarMenu: React.FC<ISideBarMenu> = ({
     <SideBarMenuContainer>
       <div className="hamburger-nav">
         <button
-          className="hamburger-menuIcon"
+          className="hamburger-menu-icon"
           onClick={toggleHamburgerMenu}
           onKeyDown={toggleHamburgerMenu}
           tabIndex={0}
