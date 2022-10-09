@@ -8,8 +8,10 @@ import { getLogo } from "../../../helper/getLogo";
 export const Blogs: React.FC = () => {
   return (
     <BlogsContainer>
-      <h2 className="blogs-heading">{blogsData.title}</h2>
-      <p className="blogs-description">{blogsData.description}</p>
+      <div className="blogs-top-section">
+        <h2 className="blogs-heading">{blogsData.title}</h2>
+        <p className="blogs-description">{blogsData.description}</p>
+      </div>
       <div className="blogs-list">
         {blogsData.blogs.map((blog) => {
           return (

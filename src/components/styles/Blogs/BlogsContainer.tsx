@@ -5,16 +5,21 @@ export const BlogsContainer = styled.section`
   height: 100%;
   margin-top: ${({ theme }) => theme.spaces.xl};
 
-  .blogs-heading {
-    font-size: ${({ theme }) => theme.fontSize.mobile.h2};
-    color: ${({ theme }) => theme.colors.texts.headers};
-    margin-bottom: ${({ theme }) => theme.spaces.xs};
-  }
-
-  .blogs-description {
-    font-size: ${({ theme }) => theme.fontSize.mobile.body};
-    color: ${({ theme }) => theme.colors.texts.body};
+  .blogs-top-section {
+    display: flex;
+    flex-direction: column;
     margin-bottom: ${({ theme }) => theme.spaces.l};
+
+    .blogs-heading {
+      font-size: ${({ theme }) => theme.fontSize.mobile.h2};
+      color: ${({ theme }) => theme.colors.texts.headers};
+      margin-bottom: ${({ theme }) => theme.spaces.xs};
+    }
+
+    .blogs-description {
+      font-size: ${({ theme }) => theme.fontSize.mobile.body};
+      color: ${({ theme }) => theme.colors.texts.body};
+    }
   }
 
   .blogs-list {
@@ -73,6 +78,77 @@ export const BlogsContainer = styled.section`
           margin-left: ${({ theme }) => theme.spaces.xs};
         }
       }
+    }
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoint.tabletMinWidth}) {
+    margin-top: ${({ theme }) => theme.spaces.xxl5};
+
+    .blogs-top-section {
+      .blogs-heading {
+        font-size: ${({ theme }) => theme.fontSize.desktop.h2};
+      }
+
+      .blogs-description {
+        font-size: ${({ theme }) => theme.fontSize.desktop.body};
+      }
+    }
+
+    .blogs-list {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: ${({ theme }) => theme.spaces.s};
+
+      .blog {
+        max-width: 375px;
+
+        & .blog-image {
+          width: 100%;
+          margin-bottom: ${({ theme }) => theme.spaces.m};
+        }
+
+        & small {
+          font-size: ${({ theme }) =>
+            theme.fontSize.desktop.secondaryInformation};
+          margin-bottom: ${({ theme }) => theme.spaces.s};
+        }
+
+        & .blog-title {
+          font-size: ${({ theme }) => theme.fontSize.desktop.h3};
+          margin-bottom: ${({ theme }) => theme.spaces.s};
+        }
+
+        & .blog-description {
+          font-size: ${({ theme }) => theme.fontSize.desktop.body};
+          margin-bottom: ${({ theme }) => theme.spaces.m};
+        }
+
+        & .blog-cta {
+          font-size: ${({ theme }) =>
+            theme.fontSize.desktop.secondaryInformation};
+
+          & img {
+            margin-left: ${({ theme }) => theme.spaces.xs};
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: ${({ theme }) => theme.breakpoint.desktopMinWidth}) {
+    .blogs-top-section {
+      flex-direction: row;
+
+      .blogs-description {
+        max-width: 829px;
+        margin-left: auto;
+      }
+    }
+
+    .blogs-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: ${({ theme }) => theme.spaces.l};
     }
   }
 `;
