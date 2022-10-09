@@ -6,10 +6,9 @@ export const HeroSectionContainer = styled.section`
   flex-direction: column;
   justify-content: center;
   justify-items: center;
-  margin-inline: ${({ theme }) => theme.spaces.s};
   min-width: ${({ theme }) => theme.breakpoint.mobileMinWidth};
 
-  .socialIcons {
+  .social-icons {
     margin-bottom: ${({ theme }) => theme.spaces.s};
 
     a {
@@ -21,31 +20,31 @@ export const HeroSectionContainer = styled.section`
     }
   }
 
-  .heroContent {
-    .contentSecondary {
+  .hero-content {
+    .content-secondary {
       color: ${({ theme }) => theme.colors.texts.highlight};
       font-size: ${({ theme }) => theme.fontSize.mobile.secondaryInformation};
       margin-bottom: ${({ theme }) => theme.spaces.xs};
     }
 
-    .contentHeading {
+    .content-heading {
       font-size: ${({ theme }) => theme.fontSize.mobile.h1};
       color: ${({ theme }) => theme.colors.texts.mainHeading};
       margin-bottom: ${({ theme }) => theme.spaces.l};
     }
 
-    .contentDescription {
+    .content-description {
       color: ${({ theme }) => theme.colors.texts.body};
       font-size: ${({ theme }) => theme.fontSize.mobile.body};
       margin-bottom: ${({ theme }) => theme.spaces.xl};
       line-height: ${({ theme }) => theme.lineHeight};
     }
 
-    .contentCTA {
+    .content-cta {
       display: flex;
       flex-direction: column;
 
-      .contentPrimaryAction {
+      .content-primary-action {
         width: 179px;
         height: 60px;
         color: ${({ theme }) => theme.colors.texts.highlight};
@@ -66,7 +65,7 @@ export const HeroSectionContainer = styled.section`
         }
       }
 
-      .contentSecondaryAction {
+      .content-secondary-action {
         text-decoration: underline;
         line-height: ${({ theme }) => theme.lineHeight};
         text-underline-offset: 4px;
@@ -78,15 +77,14 @@ export const HeroSectionContainer = styled.section`
   }
 
   @media screen and (min-width: 686px) {
-    margin-inline: ${({ theme }) => theme.spaces.l};
     width: 622px;
 
-    .heroContent {
-      .contentCTA {
+    .hero-content {
+      .content-cta {
         flex-direction: row;
         align-items: center;
 
-        .contentPrimaryAction {
+        .content-primary-action {
           margin: 0;
           margin-right: ${({ theme }) => theme.spaces.xxl};
         }
@@ -95,29 +93,28 @@ export const HeroSectionContainer = styled.section`
   }
 
   @media screen and (min-width: 1336px) {
-    margin-inline: 196px;
     width: 662px;
 
-    .heroContent {
-      .contentSecondary {
+    .hero-content {
+      .content-secondary {
         font-size: ${({ theme }) =>
           theme.fontSize.desktop.secondaryInformation};
       }
 
-      .contentHeading {
+      .content-heading {
         font-size: ${({ theme }) => theme.fontSize.desktop.h1};
       }
 
-      .contentDescription {
+      .content-description {
         font-size: ${({ theme }) => theme.fontSize.desktop.body};
         margin-bottom: ${({ theme }) => theme.spaces.xxl5};
       }
 
-      .contentCTA {
+      .content-cta {
         flex-direction: row;
         align-items: center;
 
-        .contentPrimaryAction {
+        .content-primary-action {
           margin: 0;
           margin-right: ${({ theme }) => theme.spaces.xxl};
           width: 195px;
@@ -125,7 +122,7 @@ export const HeroSectionContainer = styled.section`
           font-size: 24px;
         }
 
-        .contentSecondaryAction {
+        .content-secondary-action {
           font-size: 24px;
         }
       }

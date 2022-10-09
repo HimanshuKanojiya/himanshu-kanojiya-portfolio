@@ -5,7 +5,7 @@ export const FloatingSocialMediaContainer = styled.div`
   right: 56px;
   bottom: 0;
 
-  .socialIcons {
+  .social-icons {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +25,7 @@ export const FloatingSocialMediaContainer = styled.div`
     }
   }
 
-  .verticalBorder {
+  .vertical-border {
     border-style: solid;
     border-width: 1px;
     border-color: ${({ theme }) => theme.colors.texts.highlight};

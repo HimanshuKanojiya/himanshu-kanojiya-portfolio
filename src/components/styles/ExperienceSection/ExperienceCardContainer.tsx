@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ExperienceCardContainer = styled.div`
-  .experienceItem {
+  .experience-item {
     width: 100%;
     min-height: 170px;
     background-color: ${({ theme }) => theme.colors.background.bg3};
@@ -9,15 +9,15 @@ export const ExperienceCardContainer = styled.div`
     margin-bottom: ${({ theme }) => theme.spaces.m};
     border-radius: 2px;
 
-    .companyDetails {
-      .aboutCompany {
-        .jobTitle {
+    .company-details {
+      .about-company {
+        .job-title {
           color: ${({ theme }) => theme.colors.texts.headers};
           font-size: ${({ theme }) => theme.fontSize.mobile.h3};
           margin-top: ${({ theme }) => theme.spaces.xs};
         }
 
-        .companyName {
+        .company-name {
           font-family: "Chakra Petch", sans-serif;
           font-size: 14px;
           color: ${({ theme }) => theme.colors.texts.headers};
@@ -52,7 +52,7 @@ export const ExperienceCardContainer = styled.div`
       }
     }
 
-    .seeMoreAboutThisJob {
+    .see-more-about-this-job {
       display: flex;
       font-family: "Chakra Petch", sans-serif;
       font-size: ${({ theme }) => theme.fontSize.mobile.label};
@@ -73,19 +73,19 @@ export const ExperienceCardContainer = styled.div`
   }
 
   @media screen and (min-width: 686px) {
-    .experienceItem {
-      .companyDetails {
+    .experience-item {
+      .company-details {
         & > img {
           width: 72px;
           height: 72px;
         }
 
-        .aboutCompany {
-          .jobTitle {
+        .about-company {
+          .job-title {
             font-size: ${({ theme }) => theme.fontSize.desktop.h3};
           }
 
-          .companyName {
+          .company-name {
             font-size: 18px;
 
             & span {
@@ -100,7 +100,7 @@ export const ExperienceCardContainer = styled.div`
         font-size: ${({ theme }) => theme.fontSize.desktop.body};
       }
 
-      .seeMoreAboutThisJob {
+      .see-more-about-this-job {
         font-size: ${({ theme }) => theme.fontSize.desktop.label};
         margin-top: ${({ theme }) => theme.spaces.s};
       }
@@ -108,19 +108,19 @@ export const ExperienceCardContainer = styled.div`
   }
 
   @media screen and (min-width: 1336px) {
-    .experienceItem {
+    .experience-item {
       background-color: transparent;
       padding: 0;
 
-      .companyDetails {
+      .company-details {
         display: flex;
         flex-direction: row;
         align-items: center;
 
-        .aboutCompany {
+        .about-company {
           margin-left: ${({ theme }) => theme.spaces.m};
 
-          .jobTitle {
+          .job-title {
             margin: 0;
           }
         }

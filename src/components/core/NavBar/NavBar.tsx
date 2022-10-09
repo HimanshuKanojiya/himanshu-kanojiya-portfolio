@@ -29,12 +29,12 @@ export const NavBar: React.FC = () => {
 
   return (
     <NavBarContainer>
-      <h3 className="outerLogo" tabIndex={0}>
-        HKAN<span className="innerLogo">OJIYA</span>
+      <h3 className="outer-logo" tabIndex={0}>
+        HKAN<span className="inner-logo">OJIYA</span>
       </h3>
 
       {isDesktop && (
-        <div className="desktopMenu">
+        <div className="desktop-menu">
           <ul>
             {navMenuItems.map((menuItem) => {
               return (
@@ -46,7 +46,7 @@ export const NavBar: React.FC = () => {
                       onKeyDown={jumpToContent}
                       tabIndex={0}
                       className={
-                        currentJumpId === menuItem.jumpId ? "activeLink" : ""
+                        currentJumpId === menuItem.jumpId ? "active-link" : ""
                       }
                     >
                       {menuItem.title}
@@ -65,7 +65,7 @@ export const NavBar: React.FC = () => {
       {!isDesktop && (
         <>
           <button
-            className="hamburgerMenuIcon"
+            className="hamburger-menu-icon"
             onClick={toggleHamburgerMenuHandler}
             onKeyDown={toggleHamburgerMenuHandler}
             tabIndex={0}

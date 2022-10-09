@@ -4,15 +4,14 @@ export const SkillsSectionContainer = styled.section`
   width: 100%;
   height: 100%;
   margin-top: ${({ theme }) => theme.spaces.xl};
-  padding-inline: ${({ theme }) => theme.spaces.s};
 
-  .skillTitle {
+  .skill-title {
     font-size: ${({ theme }) => theme.fontSize.mobile.h2};
     color: ${({ theme }) => theme.colors.texts.headers};
     margin-bottom: ${({ theme }) => theme.spaces.l};
   }
 
-  .skillsList {
+  .skills-list {
     display: flex;
     flex-wrap: wrap;
     gap: ${({ theme }) => theme.spaces.m};
@@ -20,25 +19,23 @@ export const SkillsSectionContainer = styled.section`
 
   @media screen and (min-width: 686px) {
     margin-top: ${({ theme }) => theme.spaces.xxl5};
-    padding-inline: ${({ theme }) => theme.spaces.l};
     max-width: 768px;
 
-    .skillTitle {
+    .skill-title {
       font-size: ${({ theme }) => theme.fontSize.desktop.h2};
       margin-bottom: ${({ theme }) => theme.spaces.xl};
     }
 
-    .skillsList {
+    .skills-list {
       flex-wrap: wrap;
       gap: ${({ theme }) => theme.spaces.l};
     }
   }
 
   @media screen and (min-width: 1336px) {
-    padding-inline: 196px;
     max-width: 100%;
 
-    .skillsList {
+    .skills-list {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: ${({ theme }) => theme.spaces.l};

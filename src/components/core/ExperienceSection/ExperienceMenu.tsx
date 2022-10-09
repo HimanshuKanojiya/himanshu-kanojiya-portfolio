@@ -9,14 +9,14 @@ export const ExperienceMenu: React.FC<IExperienceMenu> = ({
 }) => {
   return (
     <ExperienceMenuContainer>
-      <ul className="leftNavigationMenu">
+      <ul className="left-navigation-menu">
         {Experience.map((experience) => {
           return (
             <li
               key={experience.jobId}
-              className={`companyList ${
+              className={`company-list ${
                 currentSelectedCompany === experience.jobId
-                  ? "selectedCompany"
+                  ? "selected-company"
                   : ""
               }`}
             >

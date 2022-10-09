@@ -1,6 +1,7 @@
 import React from "react";
 import { createPortal } from "react-dom";
 
+import { Layout } from "../components/styles/Layout";
 import { NavBar } from "../components/core/NavBar/NavBar";
 import { HeroSection } from "../components/core/HeroSection/HeroSection";
 import { FloatingSocialMedia } from "../components/core/FloatingSocialMedia/FloatingSocialMedia";
@@ -15,18 +16,18 @@ export const Home: React.FC = () => {
   const isDesktop = useMediaQuery("(min-width: 1336px)");
 
   return (
-    <div>
+    <Layout>
       <NavBar />
       <HeroSection />
+      <ExperienceSection />
+      <SkillsSection />
+      <Blogs />
       {isDesktop &&
         createPortal(
           <FloatingSocialMedia />,
           document.getElementById("hanging-sm-icon") as HTMLElement
         )}
-      <ExperienceSection />
-      <SkillsSection />
-      <Blogs />
       <Footer />
-    </div>
+    </Layout>
   );
 };

@@ -5,7 +5,7 @@ export const ExperienceMenuContainer = styled.div`
   width: 392px;
   display: inline;
 
-  .leftNavigationMenu {
+  .left-navigation-menu {
     display: flex;
     flex-direction: column;
     color: ${({ theme }) => theme.colors.texts.label};
@@ -17,7 +17,7 @@ export const ExperienceMenuContainer = styled.div`
     border-right-width: 2px;
     height: 100%;
 
-    & .companyList,
+    & .company-list,
     a {
       color: inherit;
       font-size: inherit;
@@ -33,7 +33,7 @@ export const ExperienceMenuContainer = styled.div`
       padding-left: ${({ theme }) => theme.spaces.s};
     }
 
-    .selectedCompany {
+    .selected-company {
       color: ${({ theme }) => theme.colors.texts.highlight};
       background-color: ${({ theme }) => theme.colors.background.bg2};
       border-right-style: solid;
