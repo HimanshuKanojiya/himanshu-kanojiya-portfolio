@@ -8,6 +8,7 @@ import { FloatingSocialMedia } from "../components/core/FloatingSocialMedia/Floa
 import { ExperienceSection } from "../components/core/ExperienceSection/ExperienceSection";
 import { SkillsSection } from "../components/core/SkillsSection/SkillsSection";
 import { Blogs } from "../components/core/Blogs/Blogs";
+import { Projects } from "../components/core/Projects/Projects";
 import { Footer } from "../components/core/Footer/Footer";
 
 import { useMediaQuery } from "../helper/useMediaQuery";
@@ -22,6 +23,7 @@ export const Home: React.FC = () => {
       <ExperienceSection />
       <SkillsSection />
       <Blogs />
+      <Projects />
       {isDesktop &&
         createPortal(
           <FloatingSocialMedia />,
