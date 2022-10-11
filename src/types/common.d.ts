@@ -32,4 +32,5 @@ type GetIcons =
   | "BitbucketSkillIcon"
   | "BlogsSampleImage"
   | "ExternalLinkIcon"
-  | "NetflixLogo";
+  | "NetflixLogo"
+  | "NetflixSampleImage";

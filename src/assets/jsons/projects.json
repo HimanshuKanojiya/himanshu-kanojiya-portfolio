@@ -4,7 +4,7 @@
   "projectItems": [
     {
       "projectId": "netflixProject2021",
-      "projectImage": "BlogsSampleImage",
+      "projectImage": "NetflixSampleImage",
       "projectLogo": "NetflixLogo",
       "projectTitle": "Netflix Clone",
       "projectDescription": "Netflix Clone from scratch using only HTML, CSS, JavaScript, and no other frameworks used during implementation.",
