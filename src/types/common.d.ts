@@ -31,4 +31,5 @@ type GetIcons =
   | "WebpackSkillIcon"
   | "BitbucketSkillIcon"
   | "BlogsSampleImage"
-  | "ExternalLinkIcon";
+  | "ExternalLinkIcon"
+  | "NetflixLogo";

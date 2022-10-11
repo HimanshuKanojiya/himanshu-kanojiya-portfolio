@@ -31,6 +31,7 @@ import {
   BitbucketSkillIcon,
   BlogsSampleImage,
   ExternalLinkIcon,
+  NetflixLogo,
 } from "../assets/icons/iconsList";
 
 export const getLogo = (iconName: GetIcons) => {
@@ -130,6 +131,9 @@ export const getLogo = (iconName: GetIcons) => {
 
     case "ExternalLinkIcon":
       return ExternalLinkIcon;
+
+    case "NetflixLogo":
+      return NetflixLogo;
 
     default:
       return JavaScriptIcon;
