@@ -32,6 +32,7 @@ import {
   BlogsSampleImage,
   ExternalLinkIcon,
   NetflixLogo,
+  NetflixSampleImage,
 } from "../assets/icons/iconsList";
 
 export const getLogo = (iconName: GetIcons) => {
@@ -134,6 +135,9 @@ export const getLogo = (iconName: GetIcons) => {
 
     case "NetflixLogo":
       return NetflixLogo;
+
+    case "NetflixSampleImage":
+      return NetflixSampleImage;
 
     default:
       return JavaScriptIcon;
