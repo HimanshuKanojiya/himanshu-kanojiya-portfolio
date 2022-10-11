@@ -15,7 +15,9 @@ export const Projects: React.FC = () => {
       <div className="projects-top-section">
         <h2 className="projects-heading">{projectsData.title}</h2>
         <p className="projects-description">{projectsData.description}</p>
-        {!isDesktop && <ProjectsMobile />}
+        {!isDesktop && (
+          <ProjectsMobile projectsData={projectsData.projectItems} />
+        )}
         {isDesktop && <ProjectsDesktop />}
       </div>
     </ProjectsContainer>

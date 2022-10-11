@@ -32,6 +32,7 @@ import WebpackSkillIcon from "./WebpackSkillIcon.svg";
 import BitbucketSkillIcon from "./BitbucketSkillIcon.svg";
 import BlogsSampleImage from "./BlogsSampleImage.png";
 import ExternalLinkIcon from "./ExternalLinkIcon.svg";
+import NetflixLogo from "./NetflixLogo.png";
 
 export {
   HamburgerIcon,
@@ -68,4 +69,5 @@ export {
   BitbucketSkillIcon,
   BlogsSampleImage,
   ExternalLinkIcon,
+  NetflixLogo,
 };
