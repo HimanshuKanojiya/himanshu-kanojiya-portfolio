@@ -37,6 +37,42 @@
       "projectLiveLink": "/",
       "projectLiveTitle": "Project Link",
       "projectLiveIcon": "ExternalLinkIcon"
+    },
+    {
+      "projectId": "amazonProject2021",
+      "projectImage": "NetflixSampleImage",
+      "projectLogo": "NetflixLogo",
+      "projectTitle": "Amazon Web Clone",
+      "projectDescription": "Netflix Clone from scratch using only HTML, CSS, JavaScript, and no other frameworks used during implementation.",
+      "technologyUsedTitle": "Tech, I have used for it:",
+      "usedTechnologies": [
+        {
+          "iconName": "JavaScriptIcon",
+          "name": "JavaScript"
+        },
+        {
+          "iconName": "Css3Icon",
+          "name": "CSS3"
+        },
+        {
+          "iconName": "HtmlSkillIcon",
+          "name": "Html"
+        },
+        {
+          "iconName": "ReactJsIcon",
+          "name": "React Js"
+        },
+        {
+          "iconName": "TypescriptIcon",
+          "name": "Typescript"
+        }
+      ],
+      "projectRepositoryLink": "/",
+      "projectRepositoryTitle": "Code Link",
+      "projectRepositoryIcon": "ExternalLinkIcon",
+      "projectLiveLink": "/",
+      "projectLiveTitle": "Project Link",
+      "projectLiveIcon": "ExternalLinkIcon"
     }
   ]
 }
