@@ -7,7 +7,7 @@ import { useMediaQuery } from "../../../helper/useMediaQuery";
 
 import { getLogo } from "../../../helper/getLogo";
 
-export const ProjectsMobile: React.FC<IProjectsMobile> = ({ projectsData }) => {
+export const ProjectsMobile: React.FC<IProjectsItems> = ({ projectsData }) => {
   const [showMore, setShowMore] = useState<boolean>(false);
   const isTablet = useMediaQuery("(min-width: 686px)");
 

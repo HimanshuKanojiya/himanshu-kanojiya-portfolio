@@ -81,23 +81,30 @@ interface ISkillCard {
   }[];
 }
 
-interface IProjectsMobile {
-  projectsData: {
-    projectId: string;
-    projectImage: string;
-    projectLogo: string;
-    projectTitle: string;
-    projectDescription: string;
-    technologyUsedTitle: string;
-    usedTechnologies: {
-      iconName: string;
-      name: string;
-    }[];
-    projectRepositoryLink: string;
-    projectRepositoryTitle: string;
-    projectRepositoryIcon: string;
-    projectLiveLink: string;
-    projectLiveTitle: string;
-    projectLiveIcon: string;
+interface ProjectInfo {
+  projectId: string;
+  projectImage: string;
+  projectLogo: string;
+  projectTitle: string;
+  projectDescription: string;
+  technologyUsedTitle: string;
+  isProjectFeatured: boolean;
+  usedTechnologies: {
+    iconName: string;
+    name: string;
   }[];
+  projectRepositoryLink: string;
+  projectRepositoryTitle: string;
+  projectRepositoryIcon: string;
+  projectLiveLink: string;
+  projectLiveTitle: string;
+  projectLiveIcon: string;
+}
+
+interface IProjectsItems {
+  projectsData: ProjectInfo[];
+}
+
+interface IFeaturedProject {
+  projectData: ProjectInfo;
 }

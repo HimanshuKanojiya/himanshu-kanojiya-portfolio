@@ -9,6 +9,7 @@
       "projectTitle": "Netflix Clone",
       "projectDescription": "Netflix Clone from scratch using only HTML, CSS, JavaScript, and no other frameworks used during implementation.",
       "technologyUsedTitle": "Tech, I have used for it:",
+      "isProjectFeatured": true,
       "usedTechnologies": [
         {
           "iconName": "JavaScriptIcon",
@@ -45,6 +46,7 @@
       "projectTitle": "Amazon Web Clone",
       "projectDescription": "Netflix Clone from scratch using only HTML, CSS, JavaScript, and no other frameworks used during implementation.",
       "technologyUsedTitle": "Tech, I have used for it:",
+      "isProjectFeatured": false,
       "usedTechnologies": [
         {
           "iconName": "JavaScriptIcon",
