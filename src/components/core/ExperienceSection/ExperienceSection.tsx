@@ -13,7 +13,7 @@ export const ExperienceSection: React.FC = () => {
   const [experienceItems, setExperienceItems] = useState(
     Experiences.experienceItems
   );
-  const selectedItemRef = useRef("DMPTRJD06/21");
+  const selectedItemRef = useRef<string>("DMPTRJD06/21");
 
   const showAboutThisCompany = (jobId: string) => {
     selectedItemRef.current = jobId;

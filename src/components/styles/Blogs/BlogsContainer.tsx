@@ -136,6 +136,8 @@ export const BlogsContainer = styled.section`
   }
 
   @media (min-width: ${({ theme }) => theme.breakpoint.desktopMinWidth}) {
+    max-width: ${({ theme }) => theme.breakpoint.desktopMinWidth};
+
     .blogs-top-section {
       flex-direction: row;
 
@@ -147,8 +149,12 @@ export const BlogsContainer = styled.section`
 
     .blogs-list {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 375px);
       grid-gap: ${({ theme }) => theme.spaces.l};
+
+      & .blog {
+        max-width: 100%;
+      }
     }
   }
 `;

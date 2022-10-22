@@ -27,13 +27,8 @@ export const GlobalCSS = createGlobalStyle`
     body{
         background-color: ${({ theme }) => theme.colors.background.bg1};
         font-family: var(--ibm-plex-font);
-        width: 100%;
         height: 100%;
         position: relative;
-    }
-
-    #root{
-        
     }
 
     h1{

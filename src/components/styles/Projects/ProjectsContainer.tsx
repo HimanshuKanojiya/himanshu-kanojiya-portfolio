@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ProjectsContainer = styled.section`
-  width: 100%;
+  max-width: ${({ theme }) => theme.breakpoint.desktopMinWidth};
   height: 100%;
   margin-top: ${({ theme }) => theme.spaces.xl};
 

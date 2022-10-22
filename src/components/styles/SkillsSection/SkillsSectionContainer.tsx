@@ -33,7 +33,7 @@ export const SkillsSectionContainer = styled.section`
   }
 
   @media screen and (min-width: 1336px) {
-    max-width: 100%;
+    max-width: ${({ theme }) => theme.breakpoint.desktopMinWidth};
 
     .skills-list {
       display: grid;

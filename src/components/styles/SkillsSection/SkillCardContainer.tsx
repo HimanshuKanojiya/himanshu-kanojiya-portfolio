@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SkillCardContainer = styled.div`
   background-color: ${({ theme }) => theme.colors.background.bg2};
   padding: ${({ theme }) => theme.spaces.s};
-  width: 560px;
+  width: 100%;
   height: fit-content;
 
   .skill-logo {

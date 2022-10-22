@@ -40,7 +40,7 @@ export const ExperienceContainer = styled.section`
   }
 
   @media screen and (min-width: 1336px) {
-    max-width: 100%;
+    max-width: ${({ theme }) => theme.breakpoint.desktopMinWidth};
 
     .experience-section {
       display: flex;

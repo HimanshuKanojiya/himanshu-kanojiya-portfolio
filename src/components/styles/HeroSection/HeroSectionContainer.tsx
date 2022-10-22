@@ -7,6 +7,7 @@ export const HeroSectionContainer = styled.section`
   justify-content: center;
   justify-items: center;
   min-width: ${({ theme }) => theme.breakpoint.mobileMinWidth};
+  max-width: ${({ theme }) => theme.breakpoint.desktopMinWidth};
 
   .social-icons {
     margin-bottom: ${({ theme }) => theme.spaces.s};
