@@ -1,0 +1,16 @@
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: var(--portfolio-text-desktop-sub-header-two);
+  color: var(--portfolio-text-sub-headers-color);
+}
+
+.heading h2 {
+  white-space: nowrap;
+}
+
+.heading .headingBorder {
+  width: 100%;
+  border: solid 1px var(--portfolio-text-body-color);
+}

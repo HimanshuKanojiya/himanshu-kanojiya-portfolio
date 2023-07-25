@@ -1,0 +1,58 @@
+.aboutMe {
+  font-size: var(--portfolio-text-desktop-body-size);
+  color: var(--portfolio-text-body-color);
+  margin-top: 40px;
+  line-height: 1.2;
+  max-width: 793px;
+}
+
+.aboutMe p:nth-of-type(2) {
+  margin-top: 28px;
+}
+
+.skills {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  background-color: var(--portfolio-background-color-secondary);
+  margin-top: 73px;
+  margin-bottom: 104px;
+  border: solid 1px var(--portfolio-border-color-10per);
+}
+
+.skills div {
+  flex: 1;
+  height: 100%;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: var(--portfolio-border-color-20per);
+  padding: 34px;
+}
+
+.skills div h3 {
+  font-size: var(--portfolio-text-desktop-sub-header-three);
+  color: var(--portfolio-text-sub-headers-color);
+  margin: 20px 0 8px;
+}
+
+.skills div p {
+  color: var(--portfolio-text-body-color);
+  font-size: var(--portfolio-text-desktop-body-size);
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.skills div ul {
+  list-style-type: disc;
+  line-height: 1.2;
+  margin-left: 28px;
+  font-size: var(--portfolio-text-desktop-body-size);
+}
+
+.skills div ul li::marker {
+  color: var(--portfolio-text-body-color);
+}
+
+.skills div:nth-of-type(3) {
+  border: 0;
+}

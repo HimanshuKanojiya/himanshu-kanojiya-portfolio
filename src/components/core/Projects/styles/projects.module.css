@@ -1,0 +1,65 @@
+.description {
+  margin-top: 40px;
+  font-size: var(--portfolio-text-desktop-body-size);
+  color: var(--portfolio-text-body-color);
+  line-height: 1.4;
+}
+
+.projects {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+}
+
+.project {
+  position: relative;
+}
+
+.projects .project .projImage {
+  width: 40%;
+}
+
+.projects .project .projImage img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.projects .project .projImage .imageLayout {
+  background-color: var(--portfolio-background-color-tertiary);
+  opacity: 20%;
+  width: 100%;
+  height: 100%;
+}
+
+.projects .project .projInfo {
+  background-color: var(--portfolio-background-color-secondary);
+  width: 671px;
+  height: 300px;
+  padding: 28px 36px;
+  line-height: 1.2;
+  border: solid 1px var(--portfolio-border-color-10per);
+  position: absolute;
+  left: 35%;
+  top: -5%;
+}
+
+.projects .project .projInfo h3 {
+  font-size: var(--portfolio-text-desktop-sub-header-three);
+  color: var(--portfolio-text-sub-headers-color);
+}
+
+.projects .project .projInfo p {
+  font-size: var(--portfolio-text-desktop-body-size);
+  color: var(--portfolio-text-body-color);
+  margin-top: 12px;
+}
+
+.projects .project .projInfo ul {
+  font-size: var(--portfolio-text-desktop-body-size);
+  color: var(--portfolio-text-body-color);
+  margin-top: 12px;
+  list-style-type: disc;
+  margin-left: 24px;
+}

@@ -1,0 +1,89 @@
+.experience {
+  display: flex;
+  margin-top: 40px;
+}
+
+.experience .navigationMenu {
+  width: 40%;
+}
+
+.experience .navigationMenu .menuItem {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  margin-bottom: 16px;
+}
+
+.experience .navigationMenu .menuItem .leftIcon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.experience .navigationMenu .menuItem .leftIcon .icon {
+  width: 24px;
+  height: 24px;
+  background-color: var(--portfolio-text-body-color);
+  border: 0;
+}
+
+.experience .navigationMenu .menuItem .leftIcon .activeIcon {
+  background-color: var(--portfolio-text-highlight-color);
+}
+
+.experience .navigationMenu .menuItem .leftIcon .activeIcon + .line {
+  border: solid 1px var(--portfolio-text-highlight-color);
+}
+
+.experience .navigationMenu .menuItem .leftIcon .line {
+  height: 120px;
+  width: 1px;
+  border: solid 1px var(--portfolio-text-body-color);
+  transition: border 450ms linear;
+}
+
+.experience .navigationMenu .menuItem .rightContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.experience .navigationMenu .menuItem .rightContent h3 {
+  color: var(--portfolio-text-sub-headers-color);
+  font-size: var(--portfolio-text-desktop-sub-header-three);
+}
+
+.experience .navigationMenu .menuItem .rightContent small {
+  color: var(--portfolio-text-label-color);
+  font-size: var(--portfolio-text-desktop-label-size);
+  line-height: 1.2;
+}
+
+.experience .navigationMenu .menuItem .rightContent button {
+  font-size: var(--portfolio-text-desktop-label-size);
+  line-height: 1.2;
+  color: var(--portfolio-text-body-color);
+  margin-top: 16px;
+  width: auto;
+  border: 0;
+  background: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.experience .aboutTheWork {
+  width: 70%;
+  font-size: var(--portfolio-text-desktop-body-size);
+  color: var(--portfolio-text-body-color);
+  background-color: var(--portfolio-background-color-secondary);
+  border: solid 1px var(--portfolio-border-color-10per);
+  padding: 24px;
+  line-height: 1.2;
+  height: 538px;
+}
+
+.experience .aboutTheWork ul {
+  list-style: disc;
+  margin-left: 24px;
+}
