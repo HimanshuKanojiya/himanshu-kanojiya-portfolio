@@ -80,7 +80,7 @@ export const portfolioTheme: DefaultTheme = {
       h2: "32px",
       h3: "26px",
       body: "24px",
-      secondaryInformation: "22px",
+      secondaryInformation: "20px",
       label: "18px",
     },
     mobile: {

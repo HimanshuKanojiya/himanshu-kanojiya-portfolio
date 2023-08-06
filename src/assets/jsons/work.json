@@ -8,18 +8,9 @@
       "to": "Present",
       "linkText": "Checkout all Responsibilities",
       "jobDescription": [
-        {
-          "type": "paragraph",
-          "value": "Responsilibites & impact:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Developed high quality UI for app as same as Figma & Zeplin designs in order to produce high qualiy apps.",
-            "Developed web applications with SEO & w3c accessibility standards and increased SERP from 0% to 100%.",
-            "Trained & mentored new joineers for projects to have a smooth onboarding process."
-          ]
-        }
+        "Developed high quality UI for app as same as Figma & Zeplin designs in order to produce high qualiy apps.",
+        "Developed web applications with SEO & w3c accessibility standards and increased SERP from 0% to 100%.",
+        "Trained & mentored new joineers for projects to have a smooth onboarding process."
       ]
     },
     {
@@ -30,20 +21,22 @@
       "to": "Present",
       "linkText": "Checkout all Responsibilities",
       "jobDescription": [
-        {
-          "type": "paragraph",
-          "value": "Responsilibites & impact:"
-        },
-        {
-          "type": "list",
-          "items": [
-            "Nivesh Advisory Pvt Ltd",
-            "Nivesh Advisory Pvt Ltd",
-            "Nivesh Advisory Pvt Ltd",
-            "Nivesh Advisory Pvt Ltd",
-            "Nivesh Advisory Pvt Ltd"
-          ]
-        }
+        "Developed high quality UI for app as same as Figma & Zeplin designs in order to produce high qualiy apps.",
+        "Developed web applications with SEO & w3c accessibility standards and increased SERP from 0% to 100%.",
+        "Trained & mentored new joineers for projects to have a smooth onboarding process."
+      ]
+    },
+    {
+      "id": "INTELLINOIDATRAINING",
+      "role": "GPS Testing Trainee",
+      "organization": "GPS Intelliplanner Pvt Ltd",
+      "from": "May 2021",
+      "to": "Present",
+      "linkText": "Checkout all Responsibilities",
+      "jobDescription": [
+        "Developed high quality UI for app as same as Figma & Zeplin designs in order to produce high qualiy apps.",
+        "Developed web applications with SEO & w3c accessibility standards and increased SERP from 0% to 100%.",
+        "Trained & mentored new joineers for projects to have a smooth onboarding process."
       ]
     }
   ]

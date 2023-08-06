@@ -10,7 +10,7 @@ import { GlobalStyles } from "@components/GlobalStyles";
 import { HeaderNavMenu } from "@components/HeaderNavMenu";
 import { HeroSection } from "@components/HeroSection";
 import { AboutMe } from "@components/AboutMe/AboutMe";
-import { Work } from "@components/Work";
+import { WorkExperience } from "@components/WorkExperience";
 import { Projects } from "@components/Projects";
 
 export const Home: FC = () => {
@@ -20,7 +20,7 @@ export const Home: FC = () => {
         <HeaderNavMenu />
         <HeroSection />
         <AboutMe />
-        <Work />
+        <WorkExperience />
         <Projects />
       </GlobalStyles>
     </ThemeProvider>
