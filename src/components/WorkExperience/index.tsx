@@ -3,7 +3,47 @@ import { FC, Children, useState } from "react";
 import { SectionWrapper } from "@components/SectionWrapper";
 import { WorkExperienceContainer } from "./styles/WorkExperienceContainer";
 
-import { works } from "@assets/jsons/work.json";
+const works = [
+  {
+    id: "DMDELHIREACTJS",
+    role: "Frontend React JS Developer",
+    organization: "Dynamics Monk Pvt Ltd",
+    from: "May 2021",
+    to: "Present",
+    linkText: "Checkout all Responsibilities",
+    jobDescription: [
+      "Developed high quality UI for app as same as Figma & Zeplin designs in order to produce high qualiy apps.",
+      "Developed web applications with SEO & w3c accessibility standards and increased SERP from 0% to 100%.",
+      "Trained & mentored new joineers for projects to have a smooth onboarding process.",
+    ],
+  },
+  {
+    id: "NIVESNOIDASEO",
+    role: "SEO Executive",
+    organization: "Nivesh Advisory Pvt Ltd",
+    from: "May 2021",
+    to: "Present",
+    linkText: "Checkout all Responsibilities",
+    jobDescription: [
+      "Developed high quality UI for app as same as Figma & Zeplin designs in order to produce high qualiy apps.",
+      "Developed web applications with SEO & w3c accessibility standards and increased SERP from 0% to 100%.",
+      "Trained & mentored new joineers for projects to have a smooth onboarding process.",
+    ],
+  },
+  {
+    id: "INTELLINOIDATRAINING",
+    role: "GPS Testing Trainee",
+    organization: "GPS Intelliplanner Pvt Ltd",
+    from: "May 2021",
+    to: "Present",
+    linkText: "Checkout all Responsibilities",
+    jobDescription: [
+      "Developed high quality UI for app as same as Figma & Zeplin designs in order to produce high qualiy apps.",
+      "Developed web applications with SEO & w3c accessibility standards and increased SERP from 0% to 100%.",
+      "Trained & mentored new joineers for projects to have a smooth onboarding process.",
+    ],
+  },
+];
 
 export const WorkExperience: FC = () => {
   const [selectedWorkExperience, setSelectedWorkExperience] = useState<string>(
