@@ -23,11 +23,13 @@ export const HeroSection: FC = () => {
           and user-friendly web applications.
         </p>
       </div>
-      <div className="hero-section-mouse-icon">
-        <MouseIcon />
-      </div>
+
       <div className="hero-section-mobile-cta">
         <LinkedInButton />
+      </div>
+
+      <div className="hero-section-mouse-icon">
+        <MouseIcon />
       </div>
     </HeroSectionContainer>
   );

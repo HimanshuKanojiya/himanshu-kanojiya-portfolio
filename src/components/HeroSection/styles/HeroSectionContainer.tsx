@@ -6,7 +6,7 @@ export const HeroSectionContainer = styled.div`
   align-items: center;
   position: relative;
   width: 100%;
-  height: 802px;
+  height: 740px;
 
   & .info {
     max-width: 780px;
@@ -90,7 +90,8 @@ export const HeroSectionContainer = styled.div`
     }
 
     & .hero-section-mouse-icon {
-      display: block;
+      display: flex;
+      margin-top: auto;
     }
 
     & .hero-section-mobile-cta {
@@ -105,7 +106,6 @@ export const MouseIconContainer = styled.div`
   font-size: 14px;
   font-family: ${({ theme }) => theme.fontFamily.chakraPetch};
   cursor: pointer;
-  height: 90vh;
 
   & .mouse-line {
     display: block;
