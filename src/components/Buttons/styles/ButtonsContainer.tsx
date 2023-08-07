@@ -34,3 +34,28 @@ export const ContactUsButtonContainer = styled.a`
     display: block;
   }
 `;
+
+export const LinkedInButtonContainer = styled.button`
+  display: flex;
+  align-items: center;
+  gap: ${({ theme }) => theme.spaces.xs};
+  padding: ${({ theme }) => theme.spaces.m};
+  background-color: transparent;
+  border: solid 1px ${({ theme }) => theme.colors.texts.highlight};
+  color: ${({ theme }) => theme.colors.texts.highlight};
+  text-transform: uppercase;
+  font-size: ${({ theme }) => theme.fontSize.mobile.body};
+  font-family: ${({ theme }) => theme.fontFamily.chakraPetch};
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+
+  & svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  @media (min-width: 991px) {
+    font-size: ${({ theme }) => theme.fontSize.desktop.body};
+  }
+`;

@@ -4,11 +4,11 @@ export const NormalProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  max-width: 420px;
-  height: 340px;
+  max-width: 400px;
+  height: 307px;
   background-color: ${({ theme }) => theme.colors.background.secondary};
   border: solid 1px ${({ theme }) => theme.colors.texts.borderColor10per};
-  padding: ${({ theme }) => theme.spaces.xxl2};
+  padding: ${({ theme }) => theme.spaces.l};
 
   & .project-header {
     display: flex;
@@ -69,6 +69,9 @@ export const NormalProjectContainer = styled.div`
   }
 
   @media (min-width: 991px) {
+    height: 340px;
+    padding: ${({ theme }) => theme.spaces.xxl2};
+
     & .project-header {
       font-size: ${({ theme }) => theme.fontSize.desktop.label};
     }

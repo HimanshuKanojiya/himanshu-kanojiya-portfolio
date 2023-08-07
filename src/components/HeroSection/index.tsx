@@ -2,7 +2,6 @@ import { FC } from "react";
 
 import Image from "next/image";
 
-import heroSectionStyles from "./styles/heroSection.module.css";
 import { HeroSectionContainer } from "./styles/HeroSectionContainer";
 import { MouseIcon } from "./MouseIcon";
 
