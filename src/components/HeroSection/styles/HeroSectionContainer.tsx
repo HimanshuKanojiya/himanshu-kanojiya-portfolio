@@ -6,7 +6,7 @@ export const HeroSectionContainer = styled.div`
   align-items: center;
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 802px;
 
   & .info {
     max-width: 780px;
@@ -14,7 +14,7 @@ export const HeroSectionContainer = styled.div`
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: -8.5%;
+    top: -6.5%;
     z-index: 1;
     padding-inline: ${({ theme }) => theme.spaces.l};
 
@@ -65,6 +65,7 @@ export const HeroSectionContainer = styled.div`
     & .info {
       max-width: 871px;
       padding-inline: 0;
+      top: -8.5%;
 
       & img {
         width: 285px;
@@ -102,6 +103,7 @@ export const MouseIconContainer = styled.div`
   font-size: 14px;
   font-family: ${({ theme }) => theme.fontFamily.chakraPetch};
   cursor: pointer;
+  height: 90vh;
 
   & .mouse-line {
     display: block;
