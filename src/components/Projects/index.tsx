@@ -10,29 +10,32 @@ import { SectionWrapper } from "@components/SectionWrapper";
 import { ProjectsContainer } from "./styles/ProjectsContainer";
 
 import projectDemoImage from "@assets/images/netflix-clone-using-vanilla.png";
+import { FeatureProject } from "./FeatureProject";
+import { NormalProject } from "./NormaProject";
 
-const data = [
+const featuredProjectdata = [
   {
     id: "amazonClone0001",
     title: "Amazon Web App Clone",
     subLabel: "Feauted Project",
+    isFeatured: true,
     moreInfo: {
-      codeRepository: {
+      codeLink: {
         value: "See the code",
-        link: "/",
+        href: "/",
+        show: true,
       },
-      live: {
+      liveLink: {
         value: "Visit the app",
-        link: "/",
+        href: "/",
+        show: true,
       },
-      showLive: true,
-      showCode: true,
     },
     description:
       "My name is Chase Ohlson. I am a frontend software engineer & freelance web developer in Los Angeles -- with roots in digital marketing & SEO. I am passionate about music, technology and basically everything that makes the internet tick.",
     techUsed: [
       {
-        techId: "SiRedux",
+        id: "SiRedux",
         value: "Redux & Redux Toolkit",
       },
     ],
@@ -41,23 +44,24 @@ const data = [
     id: "myAstroWeb0002",
     title: "My Astro Web",
     subLabel: "Feauted Project",
+    isFeatured: true,
     moreInfo: {
-      codeRepository: {
+      codeLink: {
         value: "See the code",
-        link: "/",
+        href: "/",
+        show: true,
       },
-      live: {
+      liveLink: {
         value: "Visit the app",
-        link: "/",
+        href: "/",
+        show: true,
       },
-      showLive: true,
-      showCode: true,
     },
     description:
       "My name is Chase Ohlson. I am a frontend software engineer & freelance web developer in Los Angeles -- with roots in digital marketing & SEO. I am passionate about music, technology and basically everything that makes the internet tick.",
     techUsed: [
       {
-        techId: "SiRedux",
+        id: "SiRedux",
         value: "Redux & Redux Toolkit",
       },
     ],
@@ -74,65 +78,32 @@ export const Projects: FC = () => {
           I am passionate about music, technology and basically everything that
           makes the internet tick.
         </p>
-        <ul className="projects">
-          {data.map((project, index) => {
+        <ul className="featured-projects">
+          {featuredProjectdata.map((project, index) => {
             return (
-              <li key={project.id} className="project">
-                <div className="project-left-column">
-                  <div className="project-number">
-                    <p>{index < 9 ? `0${index + 1}.` : `${index + 1}.`}</p>
-                    <div className="line" />
-                    <p>{project.subLabel}</p>
-                  </div>
-                  <div className="project-header">
-                    <h3>{project.title}</h3>
-                    <span className="links-to-project">
-                      {project.moreInfo.showLive && (
-                        <Link href={project.moreInfo.live.link}>
-                          <AiOutlineLink
-                            width="20px"
-                            height="20px"
-                            color="#dadaf2"
-                          />
-                          <p>{project.moreInfo.live.value}</p>
-                        </Link>
-                      )}
-                      {project.moreInfo.showCode && (
-                        <Link href={project.moreInfo.codeRepository.link}>
-                          <AiOutlineGlobal
-                            width="20px"
-                            height="20px"
-                            color="#dadaf2"
-                          />
-                          <p>{project.moreInfo.codeRepository.value}</p>
-                        </Link>
-                      )}
-                    </span>
-                  </div>
-                  <div className="project-body">
-                    <p>{project.description}</p>
-                  </div>
-                  <ul className="project-footer">
-                    {project.techUsed.map((tech) => {
-                      return (
-                        <li key={tech.techId}>
-                          <SiRedux width="20px" height="20px" color="#dadaf2" />
-                          Redux & Redux Toolkit
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </div>
-                <Image
-                  src={projectDemoImage}
-                  width={473}
-                  height={260}
-                  alt="demo iamge"
-                  className="project-right-column"
+              <li key={project.id}>
+                <FeatureProject
+                  title={project.title}
+                  number={index}
+                  featuredLabelText={project.subLabel}
+                  description={project.description}
+                  image={projectDemoImage}
+                  techUsed={project.techUsed}
+                  moreInfo={project.moreInfo}
+                  className={(index + 1) % 2 === 0 ? "reverse-column" : ""}
                 />
               </li>
             );
           })}
+        </ul>
+        <ul className="other-projects">
+          <NormalProject number={0} featuredLabelText="Based on React Js" />
+          <NormalProject number={1} featuredLabelText="Based on React Js" />
+          <NormalProject number={2} featuredLabelText="Based on React Js" />
+          <NormalProject number={3} featuredLabelText="Based on React Js" />
+          <NormalProject number={4} featuredLabelText="Based on React Js" />
+          <NormalProject number={5} featuredLabelText="Based on React Js" />
+          <NormalProject number={6} featuredLabelText="Based on React Js" />
         </ul>
       </ProjectsContainer>
     </SectionWrapper>

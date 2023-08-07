@@ -7,3 +7,30 @@ interface ISocialIcons {
 interface IMobileMenu {
   onClickToClose: () => void;
 }
+
+interface IFeatureProjectProps {
+  number: number;
+  featuredLabelText: string;
+  title: string;
+  moreInfo: {
+    codeLink: {
+      show: boolean;
+      href: string;
+      value: string;
+    };
+    liveLink: {
+      show: boolean;
+      href: string;
+      value: string;
+    };
+  };
+  description: string;
+  techUsed: { id: string; value: string }[];
+  image: StaticImageData;
+  className?: string;
+}
+
+interface INormalProjectProps {
+  number: number;
+  featuredLabelText: string;
+}
