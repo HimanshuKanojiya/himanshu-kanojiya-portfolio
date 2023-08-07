@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import { HeroSectionContainer } from "./styles/HeroSectionContainer";
 import { MouseIcon } from "./MouseIcon";
+import { LinkedInButton } from "@components/Buttons/LinkedInButton";
 
 import heroImage from "@assets/images/heroImage.png";
 
@@ -22,7 +23,12 @@ export const HeroSection: FC = () => {
           and user-friendly web applications.
         </p>
       </div>
-      <MouseIcon />
+      <div className="hero-section-mouse-icon">
+        <MouseIcon />
+      </div>
+      <div className="hero-section-mobile-cta">
+        <LinkedInButton />
+      </div>
     </HeroSectionContainer>
   );
 };

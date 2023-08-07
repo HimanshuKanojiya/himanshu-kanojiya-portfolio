@@ -1,7 +1,10 @@
 import { FC } from "react";
+import Image from "next/image";
 
 import { FooterContainer } from "./styles/FooterContainer";
 import { Logo } from "@components/Logo";
+
+import copyrightIcon from "@assets/images/copyright.svg";
 
 export const Footer: FC = () => {
   return (
@@ -9,6 +12,7 @@ export const Footer: FC = () => {
       <Logo />
       <ul>
         <li>
+          <Image src={copyrightIcon} width={20} height={20} alt="copyright" />
           <p>Copyright 2023</p>
         </li>
         <li>

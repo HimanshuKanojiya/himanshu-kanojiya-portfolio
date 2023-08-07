@@ -52,6 +52,15 @@ export const HeroSectionContainer = styled.div`
     }
   }
 
+  & .hero-section-mouse-icon {
+    display: none;
+  }
+
+  & .hero-section-mobile-cta {
+    display: block;
+    margin-top: auto;
+  }
+
   @media (min-width: 992px) {
     & .info {
       max-width: 871px;
@@ -75,6 +84,14 @@ export const HeroSectionContainer = styled.div`
         font-size: ${({ theme }) => theme.fontSize.desktop.body};
         margin: ${({ theme }) => `${theme.spaces.xxs} 0 0`};
       }
+    }
+
+    & .hero-section-mouse-icon {
+      display: block;
+    }
+
+    & .hero-section-mobile-cta {
+      display: none;
     }
   }
 `;

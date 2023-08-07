@@ -20,15 +20,26 @@ export const FooterContainer = styled.div`
     white-space: nowrap;
     flex-wrap: wrap;
 
-    & li .square-dot {
-      width: 8px;
-      height: 8px;
-      background-color: ${({ theme }) => theme.colors.texts.label};
-      display: none;
-    }
+    & li {
+      display: flex;
+      align-items: center;
 
-    & li p span {
-      color: ${({ theme }) => theme.colors.texts.highlight};
+      & img {
+        margin-right: ${({ theme }) => theme.spaces.xxs};
+        width: 24px;
+        height: 24px;
+      }
+
+      & .square-dot {
+        width: 8px;
+        height: 8px;
+        background-color: ${({ theme }) => theme.colors.texts.label};
+        display: none;
+      }
+
+      & p span {
+        color: ${({ theme }) => theme.colors.texts.highlight};
+      }
     }
   }
 
@@ -39,8 +50,10 @@ export const FooterContainer = styled.div`
       font-size: ${({ theme }) => theme.fontSize.desktop.label};
       gap: ${({ theme }) => theme.spaces.m};
 
-      & li .square-dot {
-        display: block;
+      & li {
+        & .square-dot {
+          display: block;
+        }
       }
     }
   }
