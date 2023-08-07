@@ -61,7 +61,9 @@ export const HeroSectionContainer = styled.div`
     margin-top: auto;
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 991px) {
+    height: 90vh;
+
     & .info {
       max-width: 871px;
       padding-inline: 0;
