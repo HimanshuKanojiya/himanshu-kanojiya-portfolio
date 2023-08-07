@@ -56,6 +56,8 @@ export const HeaderNavContainer = styled.nav`
       background-color: transparent;
       border: 0;
       outline: 0;
+      position: relative;
+      z-index: 2;
 
       & svg {
         width: 40px;
