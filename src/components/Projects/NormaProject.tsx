@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
 
-import { AiOutlineLink, AiOutlineGlobal } from "react-icons/ai";
+import { AiOutlineLink, AiOutlineGithub } from "react-icons/ai";
 
 import { NormalProjectContainer } from "./styles/NormalProjectContainer";
 
@@ -29,7 +29,7 @@ export const NormalProject: FC<INormalProjectProps> = ({
           Visit the app
         </Link>
         <Link href="/">
-          <AiOutlineGlobal width="20px" height="20px" color="#dadaf2" />
+          <AiOutlineGithub width="20px" height="20px" color="#dadaf2" />
           See the code
         </Link>
       </div>

@@ -65,6 +65,14 @@ export const FeatureProjectContainer = styled.div`
             width: 20px;
             height: 20px;
           }
+
+          &:hover {
+            color: ${({ theme }) => theme.colors.texts.highlight};
+
+            & svg {
+              fill: ${({ theme }) => theme.colors.texts.highlight};
+            }
+          }
         }
       }
     }
@@ -87,6 +95,8 @@ export const FeatureProjectContainer = styled.div`
         align-items: center;
         gap: ${({ theme }) => theme.spaces.xs};
         font-size: ${({ theme }) => theme.fontSize.mobile.label};
+        font-family: ${({ theme }) => theme.fontFamily.chakraPetch};
+        font-weight: 500;
       }
     }
   }

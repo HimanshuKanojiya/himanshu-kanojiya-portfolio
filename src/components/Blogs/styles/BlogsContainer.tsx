@@ -47,10 +47,20 @@ export const BlogsContainer = styled.div`
         font-family: ${({ theme }) => theme.fontFamily.chakraPetch};
         color: ${({ theme }) => theme.colors.texts.label};
         font-weight: 600;
+        transition: gap 150ms ease-in;
 
         & svg {
           width: 24px;
           height: 24px;
+        }
+
+        &:hover {
+          color: ${({ theme }) => theme.colors.texts.highlight};
+          gap: ${({ theme }) => theme.spaces.s};
+
+          & svg {
+            fill: ${({ theme }) => theme.colors.texts.highlight};
+          }
         }
       }
     }

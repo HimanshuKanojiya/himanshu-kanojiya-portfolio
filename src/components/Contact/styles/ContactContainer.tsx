@@ -4,6 +4,7 @@ export const ContactContainer = styled.div`
   margin-inline: ${({ theme }) => theme.spaces.l};
   background-color: ${({ theme }) => theme.colors.background.secondary};
   border: 1px solid ${({ theme }) => theme.colors.texts.borderColor10per};
+  border-top: 2px solid ${({ theme }) => theme.colors.texts.highlight};
   margin-top: 76px;
   position: relative;
   min-height: 650px;

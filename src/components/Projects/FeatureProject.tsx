@@ -2,7 +2,7 @@ import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { AiOutlineLink, AiOutlineGlobal } from "react-icons/ai";
+import { AiOutlineLink, AiOutlineGithub } from "react-icons/ai";
 import { SiRedux } from "react-icons/si";
 
 import { FeatureProjectContainer } from "./styles/FeatureProjectContainer";
@@ -37,7 +37,7 @@ export const FeatureProject: FC<IFeatureProjectProps> = ({
             )}
             {moreInfo.codeLink.show && (
               <Link href={moreInfo.codeLink.href}>
-                <AiOutlineGlobal width="20px" height="20px" color="#dadaf2" />
+                <AiOutlineGithub width="20px" height="20px" color="#dadaf2" />
                 <p>{moreInfo.codeLink.value}</p>
               </Link>
             )}

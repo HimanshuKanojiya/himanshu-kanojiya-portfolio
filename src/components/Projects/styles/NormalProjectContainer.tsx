@@ -50,6 +50,7 @@ export const NormalProjectContainer = styled.div`
     display: flex;
     align-items: center;
     gap: ${({ theme }) => theme.spaces.l};
+    font-family: ${({ theme }) => theme.fontFamily.chakraPetch};
 
     & a {
       display: flex;
@@ -64,6 +65,14 @@ export const NormalProjectContainer = styled.div`
       & svg {
         width: 20px;
         height: 20px;
+      }
+
+      &:hover {
+        color: ${({ theme }) => theme.colors.texts.highlight};
+
+        & svg {
+          fill: ${({ theme }) => theme.colors.texts.highlight};
+        }
       }
     }
   }
