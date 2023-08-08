@@ -49,7 +49,7 @@ const blogsData = [
 
 export const Blogs: FC = () => {
   return (
-    <SectionWrapper title="BLOGS">
+    <SectionWrapper title="BLOGS" sectionId="blogs">
       <BlogsContainer>
         <ul className="blogs">
           {Children.toArray(

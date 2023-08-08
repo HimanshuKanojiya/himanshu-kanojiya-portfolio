@@ -6,6 +6,8 @@ interface ISocialIcons {
 
 interface IMobileMenu {
   onClickToClose: () => void;
+  activeMenuItem: string;
+  onClickTotoggleMenuItem: (id: string) => void;
 }
 
 interface IFeatureProjectProps {

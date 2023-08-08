@@ -5,6 +5,7 @@ interface ISectionHeader {
 interface ISectionWrapper {
   children: ReactNode;
   title: string;
+  sectionId?: string;
 }
 
 interface IWork {

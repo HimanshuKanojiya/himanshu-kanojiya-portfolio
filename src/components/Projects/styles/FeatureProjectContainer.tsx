@@ -79,7 +79,6 @@ export const FeatureProjectContainer = styled.div`
 
     & .project-body {
       margin-top: ${({ theme }) => theme.spaces.s};
-      line-height: 1.4;
       font-size: ${({ theme }) => theme.fontSize.mobile.body};
     }
 

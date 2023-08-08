@@ -11,7 +11,7 @@ import testingTools from "@assets/images/testingTools.svg";
 
 export const AboutMe: FC = () => {
   return (
-    <SectionWrapper title="About Me">
+    <SectionWrapper title="About Me" sectionId="aboutme">
       <AboutMeContainer>
         <div className="about-me">
           <p>

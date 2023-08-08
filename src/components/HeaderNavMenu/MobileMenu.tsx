@@ -1,34 +1,62 @@
-import { FC } from "react";
+import { FC, Children, useState } from "react";
 import Link from "next/link";
 
 import { IoCloseOutline } from "react-icons/io5";
 
 import { MobileMenuContainer } from "./styles/HeaderNavContainer";
+
 import { SocialIcons } from "@components/SocialIcons";
 import { ContactUsButton } from "@components/Buttons/ContactUsButton";
 
-export const MobileMenu: FC<IMobileMenu> = ({ onClickToClose }) => {
+const headNavigationMenu = [
+  {
+    id: "#aboutme",
+    value: "ABOUT ME",
+  },
+  {
+    id: "#experience",
+    value: "EXPERIENCE",
+  },
+  {
+    id: "#projects",
+    value: "PROJECTS",
+  },
+  {
+    id: "#blogs",
+    value: "BLOGS",
+  },
+];
+
+export const MobileMenu: FC<IMobileMenu> = ({
+  onClickToClose,
+  onClickTotoggleMenuItem,
+  activeMenuItem,
+}) => {
   return (
     <MobileMenuContainer>
       <button className="close-hamburger-menu" onClick={onClickToClose}>
         <IoCloseOutline width={40} height={40} color="#2ff2f0" />
       </button>
+
       <ul className="menu">
-        <li className="menu-item">
-          <Link href="/">Experience</Link>
-        </li>
-        <li className="menu-item">
-          <Link href="/">Skills</Link>
-        </li>
-        <li className="menu-item">
-          <Link href="/">Blogs</Link>
-        </li>
-        <li className="menu-item">
-          <Link href="/">Experience</Link>
-        </li>
-        <li className="menu-item">
-          <Link href="/">Projects</Link>
-        </li>
+        {Children.toArray(
+          headNavigationMenu.map((navItem) => {
+            return (
+              <li
+                className={`menu-item ${
+                  activeMenuItem === navItem.id ? "active-link" : ""
+                }`}
+              >
+                <Link
+                  href={navItem.id}
+                  onClick={() => onClickTotoggleMenuItem(navItem.id)}
+                >
+                  {navItem.value}
+                </Link>
+              </li>
+            );
+          })
+        )}
         <li className="menu-item">
           <SocialIcons
             type="github"

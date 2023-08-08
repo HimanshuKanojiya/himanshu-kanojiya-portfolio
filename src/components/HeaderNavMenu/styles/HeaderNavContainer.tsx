@@ -31,6 +31,7 @@ export const HeaderNavContainer = styled.nav`
         text-decoration: none;
         opacity: 80%;
         color: ${({ theme }) => theme.colors.texts.label};
+        letter-spacing: 0.4px;
       }
     }
 
@@ -60,8 +61,8 @@ export const HeaderNavContainer = styled.nav`
       z-index: 2;
 
       & svg {
-        width: 40px;
-        height: 40px;
+        width: 24px;
+        height: 24px;
         cursor: pointer;
       }
     }
@@ -87,7 +88,7 @@ export const MobileMenuContainer = styled.nav`
   width: 320px;
   height: 100%;
   padding: ${({ theme }) =>
-    `${theme.spaces.s} ${theme.spaces.l} 0 ${theme.spaces.xxl2}`};
+    `${theme.spaces.m} ${theme.spaces.l} 0 ${theme.spaces.xxl2}`};
   background-color: ${({ theme }) => theme.colors.background.tertiary};
   color: ${({ theme }) => theme.colors.texts.body};
   font-family: ${({ theme }) => theme.fontFamily.chakraPetch};
@@ -101,8 +102,8 @@ export const MobileMenuContainer = styled.nav`
     cursor: pointer;
 
     & svg {
-      width: 40px;
-      height: 40px;
+      width: 24px;
+      height: 24px;
     }
   }
 
@@ -123,6 +124,13 @@ export const MobileMenuContainer = styled.nav`
         color: inherit;
         padding-block: 10px;
         cursor: pointer;
+      }
+    }
+
+    & .active-link {
+      & a {
+        opacity: 100%;
+        color: ${({ theme }) => theme.colors.texts.highlight};
       }
     }
   }

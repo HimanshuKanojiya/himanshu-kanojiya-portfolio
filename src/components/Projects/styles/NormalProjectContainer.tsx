@@ -32,15 +32,21 @@ export const NormalProjectContainer = styled.div`
   }
 
   & .project-body {
-    line-height: 1.2;
-
     & h3 {
       font-size: ${({ theme }) => theme.fontSize.mobile.h3};
       margin-block: ${({ theme }) => theme.spaces.xs};
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
 
     & p {
       font-size: ${({ theme }) => theme.fontSize.mobile.body};
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
   }
 

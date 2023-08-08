@@ -19,7 +19,6 @@ export const BlogsContainer = styled.div`
       background-color: ${({ theme }) => theme.colors.background.secondary};
       border: solid 1px ${({ theme }) => theme.colors.texts.borderColor10per};
       padding: ${({ theme }) => theme.spaces.l};
-      line-height: 1.2;
 
       & svg {
         width: 40px;
@@ -30,11 +29,19 @@ export const BlogsContainer = styled.div`
         margin: ${({ theme }) => `${theme.spaces.m} 0 ${theme.spaces.xs}`};
         color: ${({ theme }) => theme.colors.texts.subHeaders};
         font-size: ${({ theme }) => theme.fontSize.mobile.h3};
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
 
       & p {
         color: ${({ theme }) => theme.colors.texts.body};
         font-size: ${({ theme }) => theme.fontSize.mobile.body};
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
       }
 
       & a {

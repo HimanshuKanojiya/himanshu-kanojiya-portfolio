@@ -6,7 +6,7 @@ export const HeroSectionContainer = styled.div`
   align-items: center;
   position: relative;
   width: 100%;
-  height: 740px;
+  height: 800px;
 
   & .info {
     max-width: 780px;
@@ -29,13 +29,13 @@ export const HeroSectionContainer = styled.div`
       margin: ${({ theme }) => `${theme.spaces.xl} 0 ${theme.spaces.xs}`};
       font-family: ${({ theme }) => theme.fontFamily.chakraPetch};
       font-weight: 600;
+      letter-spacing: 0.5px;
     }
 
     & .heading {
       font-size: ${({ theme }) => theme.fontSize.mobile.h1};
       color: ${({ theme }) => theme.colors.texts.primaryHeading};
       text-align: center;
-      line-height: 1.2;
 
       & span {
         color: ${({ theme }) => theme.colors.texts.highlight};
@@ -48,7 +48,6 @@ export const HeroSectionContainer = styled.div`
       text-align: center;
       margin: ${({ theme }) => `${theme.spaces.m} 0 0`};
       max-width: 756px;
-      line-height: 1.2;
     }
   }
 

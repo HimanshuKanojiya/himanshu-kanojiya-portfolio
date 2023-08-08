@@ -55,9 +55,9 @@ export const WorkExperience: FC = () => {
   };
 
   return (
-    <SectionWrapper title="MY WORK EXPERIENCES">
+    <SectionWrapper title="MY WORK EXPERIENCES" sectionId="experience">
       <WorkExperienceContainer>
-        <nav className="experience-navigation">
+        <nav className="experience-navigation" id="experience">
           <ul>
             {Children.toArray(
               works.map((work) => (
@@ -79,27 +79,29 @@ export const WorkExperience: FC = () => {
         <div className="about-experience">
           {selectedWorkExperience && (
             <>
-              {works.map((work) => {
-                if (work.id !== selectedWorkExperience) return null;
+              {Children.toArray(
+                works.map((work) => {
+                  if (work.id !== selectedWorkExperience) return null;
 
-                return (
-                  <>
-                    <div className="about-experience-header">
-                      <h3>{work.role}</h3>
-                      <small>
-                        From {work.from} to {work.to}
-                      </small>
-                    </div>
-                    <ul className="responsibilites-and-work">
-                      {Children.toArray(
-                        work.jobDescription.map((responsibility) => {
-                          return <li>{responsibility}</li>;
-                        })
-                      )}
-                    </ul>
-                  </>
-                );
-              })}
+                  return (
+                    <>
+                      <div className="about-experience-header">
+                        <h3>{work.role}</h3>
+                        <small>
+                          From {work.from} to {work.to}
+                        </small>
+                      </div>
+                      <ul className="responsibilites-and-work">
+                        {Children.toArray(
+                          work.jobDescription.map((responsibility) => {
+                            return <li>{responsibility}</li>;
+                          })
+                        )}
+                      </ul>
+                    </>
+                  );
+                })
+              )}
             </>
           )}
         </div>

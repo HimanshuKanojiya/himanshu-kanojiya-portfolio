@@ -5,7 +5,6 @@ export const AboutMeContainer = styled.div`
     font-size: ${({ theme }) => theme.fontSize.mobile.body};
     color: ${({ theme }) => theme.colors.texts.body};
     margin-top: ${({ theme }) => theme.spaces.xxl};
-    line-height: 1.2;
     max-width: 793px;
 
     & p:nth-of-type(2) {
@@ -39,28 +38,21 @@ export const AboutMeContainer = styled.div`
         font-size: ${({ theme }) => theme.fontSize.mobile.h3};
         color: ${({ theme }) => theme.colors.texts.subHeaders};
         margin: ${({ theme }) => `${theme.spaces.m} 0 ${theme.spaces.xs}`};
-        line-height: 1.2;
       }
 
       & p {
         color: ${({ theme }) => theme.colors.texts.body};
         margin-bottom: ${({ theme }) => theme.spaces.s};
-        line-height: 1.2;
       }
 
       & ul {
         list-style-type: square;
-        line-height: 1.2;
         margin-left: 28px;
       }
 
       & ul li::marker {
         color: ${({ theme }) => theme.colors.texts.body};
       }
-    }
-
-    & div:nth-of-type(3) {
-      border: 0;
     }
   }
 
@@ -73,7 +65,7 @@ export const AboutMeContainer = styled.div`
     & .skills {
       margin-top: 73px;
       gap: 0;
-      height: 700px;
+      height: 850px;
       border: solid 1px ${({ theme }) => theme.colors.texts.borderColor10per};
 
       & div {
@@ -95,6 +87,10 @@ export const AboutMeContainer = styled.div`
           font-size: ${({ theme }) => theme.fontSize.desktop.h3};
           margin: ${({ theme }) => `${theme.spaces.l} 0 ${theme.spaces.xs}`};
         }
+      }
+
+      & div:nth-of-type(3) {
+        border: 0;
       }
     }
   }

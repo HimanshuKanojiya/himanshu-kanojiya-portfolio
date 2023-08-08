@@ -55,6 +55,15 @@ export const LinkedInButtonContainer = styled.button`
     height: 28px;
   }
 
+  &:hover {
+    color: ${({ theme }) => theme.colors.background.main};
+    background-color: ${({ theme }) => theme.colors.texts.highlight};
+
+    & svg {
+      fill: ${({ theme }) => theme.colors.background.main};
+    }
+  }
+
   @media (min-width: 991px) {
     font-size: ${({ theme }) => theme.fontSize.desktop.body};
   }

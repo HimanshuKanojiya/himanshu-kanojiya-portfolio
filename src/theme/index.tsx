@@ -76,7 +76,7 @@ export const portfolioTheme: DefaultTheme = {
   },
   fontSize: {
     desktop: {
-      h1: "65px",
+      h1: "50px",
       h2: "32px",
       h3: "26px",
       body: "24px",

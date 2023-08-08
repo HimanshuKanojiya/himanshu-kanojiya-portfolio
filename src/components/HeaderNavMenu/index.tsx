@@ -1,35 +1,66 @@
-import { FC, useState } from "react";
+import { FC, useState, Children } from "react";
 import Link from "next/link";
 
 import { RxHamburgerMenu } from "react-icons/rx";
 
+import { OverlayContainer } from "./styles/OverlayContainer";
 import { HeaderNavContainer } from "./styles/HeaderNavContainer";
+
 import { Logo } from "@components/Logo";
 import { SocialIcons } from "@components/SocialIcons";
 import { MobileMenu } from "./MobileMenu";
-import { OverlayContainer } from "./styles/OverlayContainer";
 import { ContactUsButton } from "@components/Buttons/ContactUsButton";
 
+const headNavigationMenu = [
+  {
+    id: "#aboutme",
+    value: "ABOUT ME",
+  },
+  {
+    id: "#experience",
+    value: "EXPERIENCE",
+  },
+  {
+    id: "#projects",
+    value: "PROJECTS",
+  },
+  {
+    id: "#blogs",
+    value: "BLOGS",
+  },
+];
+
 export const HeaderNavMenu: FC = () => {
+  const [currentPathWithHash, setCurrentPathWithHash] = useState<string>("");
   const [showMobileMenu, setMobileMenuVisible] = useState<boolean>(false);
+
+  const onClickTotoggleMenuItem = (id: string) => {
+    setCurrentPathWithHash(id);
+  };
 
   return (
     <HeaderNavContainer>
       <Logo />
       <div className="desktop-menu-container">
         <ul className="portfolio-nav-menu-links">
-          <li>
-            <Link href="#experience">EXPERIENCE</Link>
-          </li>
-          <li>
-            <Link href="#skills">SKILLS</Link>
-          </li>
-          <li>
-            <Link href="#blogs">BLOGS</Link>
-          </li>
-          <li>
-            <Link href="#projects">PROJECTS</Link>
-          </li>
+          {Children.toArray(
+            headNavigationMenu.map((navItem) => {
+              return (
+                <li
+                  className={
+                    currentPathWithHash === navItem.id ? "active-link" : ""
+                  }
+                >
+                  <Link
+                    href={navItem.id}
+                    onClick={() => onClickTotoggleMenuItem(navItem.id)}
+                  >
+                    {navItem.value}
+                  </Link>
+                </li>
+              );
+            })
+          )}
         </ul>
 
         <ul className="social-media-menu-links">
@@ -67,6 +98,8 @@ export const HeaderNavMenu: FC = () => {
               onClickToClose={() =>
                 setMobileMenuVisible((prevState) => !prevState)
               }
+              activeMenuItem={currentPathWithHash}
+              onClickTotoggleMenuItem={onClickTotoggleMenuItem}
             />
           </>
         )}

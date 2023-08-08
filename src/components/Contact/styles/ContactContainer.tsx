@@ -16,7 +16,6 @@ export const ContactContainer = styled.div`
     position: absolute;
     top: -14%;
     width: 100%;
-    line-height: 1.2;
     padding: ${({ theme }) => theme.spaces.l};
 
     & h2 {
@@ -26,10 +25,10 @@ export const ContactContainer = styled.div`
     }
 
     & p {
-      max-width: 1098px;
       text-align: center;
       margin-bottom: ${({ theme }) => theme.spaces.l};
       font-size: ${({ theme }) => theme.fontSize.mobile.body};
+      max-width: 900px;
     }
   }
 

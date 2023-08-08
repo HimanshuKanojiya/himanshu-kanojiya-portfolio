@@ -26,6 +26,7 @@ export const WorkExperienceContainer = styled.div`
         flex: 1;
         padding-bottom: ${({ theme }) => theme.spaces.s};
         cursor: pointer;
+        letter-spacing: 0.7px;
       }
 
       &::-webkit-scrollbar {
@@ -62,13 +63,13 @@ export const WorkExperienceContainer = styled.div`
       font-size: ${({ theme }) => theme.fontSize.mobile.body};
       color: ${({ theme }) => theme.colors.texts.body};
       margin-top: ${({ theme }) => theme.spaces.s};
-      line-height: 1.4;
       list-style-type: square;
-      max-width: 892px;
+      max-width: 800px;
       min-height: 400px;
 
       & li {
         margin-left: ${({ theme }) => theme.spaces.xxl};
+        margin-bottom: ${({ theme }) => theme.spaces.xs};
       }
     }
   }

@@ -39,6 +39,13 @@ export const GlobalStyles = styled.section`
     color: ${({ theme }) => theme.colors.texts.highlight};
   }
 
+  p,
+  ul,
+  li,
+  a {
+    line-height: 150%;
+  }
+
   @media (width < 881px) {
     html,
     body {

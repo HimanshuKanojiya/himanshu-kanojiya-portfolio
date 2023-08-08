@@ -70,7 +70,7 @@ const featuredProjectdata = [
 
 export const Projects: FC = () => {
   return (
-    <SectionWrapper title="MY PROJECTS">
+    <SectionWrapper title="MY PROJECTS" sectionId="projects">
       <ProjectsContainer>
         <p className="about-projects">
           My name is Chase Ohlson. I am a frontend software engineer & freelance

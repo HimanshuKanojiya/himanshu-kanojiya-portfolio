@@ -6,7 +6,7 @@ export const ProjectsContainer = styled.div`
   & .about-projects {
     font-size: ${({ theme }) => theme.fontSize.mobile.body};
     color: ${({ theme }) => theme.colors.texts.body};
-    line-height: 1.4;
+    max-width: 80%;
   }
 
   & .featured-projects {
