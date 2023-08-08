@@ -6,7 +6,7 @@ export const HeroSectionContainer = styled.div`
   align-items: center;
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 850px;
 
   & .info {
     max-width: 780px;
@@ -47,7 +47,7 @@ export const HeroSectionContainer = styled.div`
       color: ${({ theme }) => theme.colors.texts.body};
       text-align: center;
       margin: ${({ theme }) => `${theme.spaces.m} 0 0`};
-      max-width: 756px;
+      max-width: 870px;
     }
   }
 
@@ -64,7 +64,7 @@ export const HeroSectionContainer = styled.div`
     height: 90vh;
 
     & .info {
-      max-width: 871px;
+      max-width: 950px;
       padding-inline: 0;
       top: -8.5%;
 

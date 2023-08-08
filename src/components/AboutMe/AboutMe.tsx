@@ -15,10 +15,11 @@ export const AboutMe: FC = () => {
       <AboutMeContainer>
         <div className="about-me">
           <p>
-            My name is Chase Ohlson. I am a frontend software engineer &
-            freelance web developer in Los Angeles -- with roots in digital
-            marketing & SEO. I am passionate about music, technology and
-            basically everything that makes the internet tick.
+            Greetings, I am Himanshu Kanojiya, a frontend web app developer
+            based in Noida, India. With 2 years of experience in React JS & Next
+            JS, and 3 years in SEO, I am currently contributing my skills at
+            Dynamics Monk Pvt Ltd. My expertise centers around crafting dynamic,
+            user-friendly web apps.
           </p>
           <p>
             My work currently consists of a full time engineering role at The

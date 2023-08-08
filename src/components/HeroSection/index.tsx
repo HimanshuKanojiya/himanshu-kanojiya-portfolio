@@ -18,9 +18,10 @@ export const HeroSection: FC = () => {
           Building Web <span> Applications that Exceed</span> Expectations
         </h1>
         <p className="description">
-          I am frontend app developer with 2 years of experience. Currently
-          working for Dynamics Monk Pvt Ltd, I specialize in crafting dynamic
-          and user-friendly web applications.
+          I am a frontend web app developer with 2 years of experience in React
+          JS & Next Js, along with 3 years of expertise in SEO. Currently at
+          Dynamics Monk, where my focus lies in designing & developing dynamic &
+          user-friendly web apps.
         </p>
       </div>
 
