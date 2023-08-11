@@ -34,7 +34,7 @@ export const NormalProjectContainer = styled.div`
   & .project-body {
     & h3 {
       font-size: ${({ theme }) => theme.fontSize.mobile.h3};
-      margin-block: ${({ theme }) => theme.spaces.xs};
+      margin-block: ${({ theme }) => `0 ${theme.spaces.xs}`};
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
@@ -94,7 +94,7 @@ export const NormalProjectContainer = styled.div`
     & .project-body {
       & h3 {
         font-size: ${({ theme }) => theme.fontSize.desktop.h3};
-        margin: ${({ theme }) => `${theme.spaces.s} 0 ${theme.spaces.s}`};
+        margin: ${({ theme }) => `0 0 ${theme.spaces.s}`};
       }
 
       & p {
@@ -103,6 +103,7 @@ export const NormalProjectContainer = styled.div`
     }
 
     & .project-footer {
+      margin: ${({ theme }) => `${theme.spaces.s} 0 0`};
       & a {
         font-size: ${({ theme }) => theme.fontSize.desktop.label};
 

@@ -6,14 +6,14 @@ export const ProjectsContainer = styled.div`
   & .about-projects {
     font-size: ${({ theme }) => theme.fontSize.mobile.body};
     color: ${({ theme }) => theme.colors.texts.body};
-    max-width: 80%;
+    max-width: 100%;
   }
 
   & .featured-projects {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin-top: 56px;
+    margin-top: ${({ theme }) => theme.spaces.xxl};
     gap: 80px;
 
     & .reverse-column {
@@ -31,10 +31,10 @@ export const ProjectsContainer = styled.div`
   @media (min-width: 991px) {
     & .about-projects {
       font-size: ${({ theme }) => theme.fontSize.desktop.body};
+      max-width: 80%;
     }
 
     & .featured-projects {
-      margin-top: 56px;
       gap: 80px;
     }
 

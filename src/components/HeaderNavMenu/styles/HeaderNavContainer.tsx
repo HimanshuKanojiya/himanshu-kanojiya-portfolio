@@ -102,8 +102,8 @@ export const MobileMenuContainer = styled.nav`
     cursor: pointer;
 
     & svg {
-      width: 24px;
-      height: 24px;
+      width: 32px;
+      height: 32px;
     }
   }
 

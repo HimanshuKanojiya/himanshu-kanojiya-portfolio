@@ -43,10 +43,10 @@ export const GlobalStyles = styled.section`
   ul,
   li,
   a {
-    line-height: 150%;
+    line-height: 40px;
   }
 
-  @media (width < 881px) {
+  @media (width < 991px) {
     html,
     body {
       font-size: ${({ theme }) => theme.fontSize.desktop.body};
@@ -62,6 +62,13 @@ export const GlobalStyles = styled.section`
 
     h3 {
       font-size: ${({ theme }) => theme.fontSize.desktop.h3};
+    }
+
+    p,
+    ul,
+    li,
+    a {
+      line-height: 32px;
     }
   }
 `;

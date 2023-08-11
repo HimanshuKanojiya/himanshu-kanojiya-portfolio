@@ -26,7 +26,7 @@ export const HeroSectionContainer = styled.div`
     & small {
       font-size: ${({ theme }) => theme.fontSize.mobile.label};
       color: ${({ theme }) => theme.colors.texts.label};
-      margin: ${({ theme }) => `${theme.spaces.xl} 0 ${theme.spaces.xs}`};
+      margin: ${({ theme }) => `${theme.spaces.m} 0 0`};
       font-family: ${({ theme }) => theme.fontFamily.chakraPetch};
       font-weight: 600;
       letter-spacing: 0.5px;
@@ -66,16 +66,16 @@ export const HeroSectionContainer = styled.div`
     & .info {
       max-width: 950px;
       padding-inline: 0;
-      top: -8.5%;
+      top: -7.5%;
 
       & img {
-        width: 285px;
-        height: 319px;
+        width: 260px;
+        height: 298px;
       }
 
       & small {
         font-size: ${({ theme }) => theme.fontSize.desktop.label};
-        margin: ${({ theme }) => `${theme.spaces.s} 0 ${theme.spaces.xxs}`};
+        margin: ${({ theme }) => `${theme.spaces.s} 0 0`};
       }
 
       & .heading {
@@ -84,7 +84,7 @@ export const HeroSectionContainer = styled.div`
 
       & .description {
         font-size: ${({ theme }) => theme.fontSize.desktop.body};
-        margin: ${({ theme }) => `${theme.spaces.xxs} 0 0`};
+        margin: ${({ theme }) => `${theme.spaces.s} 0 0`};
       }
     }
 
@@ -117,5 +117,6 @@ export const MouseIconContainer = styled.div`
 
   & p {
     margin-top: ${({ theme }) => theme.spaces.xxs};
+    line-height: 0;
   }
 `;

@@ -32,9 +32,8 @@ export const FeatureProjectContainer = styled.div`
 
     & .project-header {
       display: flex;
-      align-items: end;
       gap: ${({ theme }) => theme.spaces.xxl2};
-      margin-top: ${({ theme }) => theme.spaces.s};
+      margin-top: 0;
       white-space: nowrap;
       flex-wrap: wrap;
 
@@ -85,7 +84,7 @@ export const FeatureProjectContainer = styled.div`
     & .project-footer {
       display: flex;
       align-items: center;
-      margin-top: ${({ theme }) => theme.spaces.l};
+      margin-top: ${({ theme }) => theme.spaces.s};
       color: ${({ theme }) => theme.colors.texts.label};
       gap: ${({ theme }) => theme.spaces.l};
 
@@ -124,7 +123,7 @@ export const FeatureProjectContainer = styled.div`
 
       & .project-header {
         gap: ${({ theme }) => theme.spaces.xxl2};
-        margin-top: ${({ theme }) => theme.spaces.s};
+        margin-top: 0;
         flex-wrap: wrap;
 
         & h3 {
@@ -150,7 +149,7 @@ export const FeatureProjectContainer = styled.div`
       }
 
       & .project-footer {
-        margin-top: ${({ theme }) => theme.spaces.xxl2};
+        margin-top: ${({ theme }) => theme.spaces.s};
         gap: ${({ theme }) => theme.spaces.l};
 
         & li {

@@ -7,7 +7,7 @@ export const ContactContainer = styled.div`
   border-top: 2px solid ${({ theme }) => theme.colors.texts.highlight};
   margin-top: 76px;
   position: relative;
-  min-height: 650px;
+  min-height: 655px;
 
   & .contact-body {
     display: flex;
@@ -17,6 +17,11 @@ export const ContactContainer = styled.div`
     top: -14%;
     width: 100%;
     padding: ${({ theme }) => theme.spaces.l};
+
+    & img {
+      width: 250px;
+      height: auto;
+    }
 
     & h2 {
       font-size: ${({ theme }) => theme.fontSize.mobile.h2};
@@ -41,13 +46,18 @@ export const ContactContainer = styled.div`
     & .contact-body {
       padding: ${({ theme }) => theme.spaces.xxl2};
 
+      & img {
+        width: 306px;
+        height: 321px;
+      }
+
       & h2 {
         font-size: ${({ theme }) => theme.fontSize.desktop.h2};
         margin: ${({ theme }) => `${theme.spaces.xxl7} 0 ${theme.spaces.xs}`};
       }
 
       & p {
-        margin-bottom: ${({ theme }) => theme.spaces.xxl2};
+        margin-bottom: ${({ theme }) => theme.spaces.xxl7};
         font-size: ${({ theme }) => theme.fontSize.desktop.body};
       }
     }

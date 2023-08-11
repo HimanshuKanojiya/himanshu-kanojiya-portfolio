@@ -85,7 +85,7 @@ export const AboutMeContainer = styled.div`
 
         & h3 {
           font-size: ${({ theme }) => theme.fontSize.desktop.h3};
-          margin: ${({ theme }) => `${theme.spaces.l} 0 ${theme.spaces.xs}`};
+          margin: ${({ theme }) => `${theme.spaces.m} 0 ${theme.spaces.xs}`};
         }
       }
 
