@@ -3,6 +3,8 @@ import "@components/styles/globals.css";
 
 import type { Metadata } from "next";
 
+import StyledComponentsRegistry from "../lib/registry";
+
 export const metadata: Metadata = {
   title: "Himanshu Kanojiya Web App Developer | Portfolio Website",
   description:
@@ -16,7 +18,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      </body>
     </html>
   );
 }
