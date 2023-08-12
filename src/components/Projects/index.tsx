@@ -15,33 +15,7 @@ import { NormalProject } from "./NormaProject";
 
 const featuredProjectdata = [
   {
-    id: "amazonClone0001",
-    title: "Amazon Web App Clone",
-    subLabel: "Feauted Project",
-    isFeatured: true,
-    moreInfo: {
-      codeLink: {
-        value: "See the code",
-        href: "/",
-        show: true,
-      },
-      liveLink: {
-        value: "Visit the app",
-        href: "/",
-        show: true,
-      },
-    },
-    description:
-      "My name is Chase Ohlson. I am a frontend software engineer & freelance web developer in Los Angeles -- with roots in digital marketing & SEO. I am passionate about music, technology and basically everything that makes the internet tick.",
-    techUsed: [
-      {
-        id: "SiRedux",
-        value: "Redux & Redux Toolkit",
-      },
-    ],
-  },
-  {
-    id: "myAstroWeb0002",
+    id: "myastroweb0001",
     title: "My Astro Web",
     subLabel: "Feauted Project",
     isFeatured: true,
@@ -58,7 +32,33 @@ const featuredProjectdata = [
       },
     },
     description:
-      "My name is Chase Ohlson. I am a frontend software engineer & freelance web developer in Los Angeles -- with roots in digital marketing & SEO. I am passionate about music, technology and basically everything that makes the internet tick.",
+      "It is an entertainment-based platform for postpaid users. Depending on their user category, users can register or sign in, purchase their preferred plans, pay service bills, explore packages, set up auto debit options, and even subscribe to internet plans.",
+    techUsed: [
+      {
+        id: "SiRedux",
+        value: "Redux & Redux Toolkit",
+      },
+    ],
+  },
+  {
+    id: "mynjoiweb0002",
+    title: "NJOI Web",
+    subLabel: "Feauted Project",
+    isFeatured: true,
+    moreInfo: {
+      codeLink: {
+        value: "See the code",
+        href: "/",
+        show: true,
+      },
+      liveLink: {
+        value: "Visit the app",
+        href: "/",
+        show: true,
+      },
+    },
+    description:
+      "The project focuses on an entertainment-based platform for prepaid users, where users can sign up for their preferred entertainment plans, explore available packages, purchase channels and movies, and add packs to their existing plans.",
     techUsed: [
       {
         id: "SiRedux",

@@ -70,7 +70,7 @@ export const HeroSectionContainer = styled.div`
 
       & img {
         width: 260px;
-        height: 298px;
+        height: auto;
       }
 
       & small {

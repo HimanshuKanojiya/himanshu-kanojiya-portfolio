@@ -15,19 +15,26 @@ export const AboutMe: FC = () => {
       <AboutMeContainer>
         <div className="about-me">
           <p>
-            Greetings, I am Himanshu Kanojiya, a frontend web app developer
-            based in Noida, India. With 2 years of experience in React JS & Next
-            JS, and 3 years in SEO, I am currently contributing my skills at
-            Dynamics Monk Pvt Ltd. My expertise centers around crafting dynamic,
-            user-friendly web apps.
+            Hello! I am Himanshu, a web app developer driven by a passion for
+            crafting captivating digital experiences. My unique blend of design
+            finesse and coding expertise results in user-friendly, responsive
+            UIs that adapt seamlessly across devices and browsers. Collaborating
+            closely with project designers, I ensure their visions become
+            functional, aesthetically pleasing user interfaces, maintaining
+            design consistency throughout the site.
           </p>
           <p>
-            My work currently consists of a full time engineering role at The
-            Noun Project (working on Lingo) & managing ongoing freelance clients
-            and side projects. I find this balancing act to be super resourceful
-            in terms my learning as a web developer, as well as for keeping up
-            with the rapid expansion of developer tools, libraries, frameworks,
-            etc.
+            Adhering to industry best code practices & patterns, I create web
+            solutions that harmoniously balance functionality and aesthetics.
+            Beyond the technical, I am committed to inclusivity, embedding
+            accessibility features for all users. Combining these skills with a
+            keen debugging eye and proactive support, I have earned a reputation
+            for reliability and excellence. My portfolio invites you to explore
+            the synergy of innovation and precision in the digital realm.
+            <br />
+            <br />
+            Looking forward to creating engaging web journeys that leave a
+            lasting impact!
           </p>
         </div>
         <div className="skills">
