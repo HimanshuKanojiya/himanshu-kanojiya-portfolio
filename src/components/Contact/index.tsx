@@ -13,7 +13,7 @@ export const Contact: FC = () => {
         <Image src={contactImage} width={306} height={321} alt="hero image" />
         <h2>Let’s collaborate</h2>
         <p>
-          Ready to web together? With a solid 2-year foundation in React and
+          Ready to work together? With a solid 2-year foundation in React and
           Next.js, coupled with 3 years mastering SEO, I am primed to enhance
           your projects. Lets collaborate for impactful web solutions that drive
           results. Hire me today to make your vision a reality.
