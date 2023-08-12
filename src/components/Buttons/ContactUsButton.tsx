@@ -9,7 +9,7 @@ import emailDarkBlue from "@assets/images/emailDarkBlue.svg";
 export const ContactUsButton: FC = () => {
   return (
     <ContactUsButtonContainer
-      href="/"
+      href="mailto:himanshukanojiya825@gmail.com"
       className="contact-us-button"
       target="_blank"
     >

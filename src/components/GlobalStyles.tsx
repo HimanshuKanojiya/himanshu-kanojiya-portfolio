@@ -43,7 +43,7 @@ export const GlobalStyles = styled.section`
   ul,
   li,
   a {
-    line-height: 40px;
+    line-height: 36px;
   }
 
   @media (width < 991px) {

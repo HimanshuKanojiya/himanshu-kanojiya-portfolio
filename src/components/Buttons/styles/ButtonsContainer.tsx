@@ -36,10 +36,6 @@ export const ContactUsButtonContainer = styled.a`
 `;
 
 export const LinkedInButtonContainer = styled.button`
-  display: flex;
-  align-items: center;
-  gap: ${({ theme }) => theme.spaces.xs};
-  padding: ${({ theme }) => theme.spaces.m};
   background-color: transparent;
   border: solid 1px ${({ theme }) => theme.colors.texts.highlight};
   color: ${({ theme }) => theme.colors.texts.highlight};
@@ -50,17 +46,29 @@ export const LinkedInButtonContainer = styled.button`
   white-space: nowrap;
   cursor: pointer;
 
-  & svg {
-    width: 28px;
-    height: 28px;
+  & a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: ${({ theme }) => theme.spaces.xs};
+    padding: ${({ theme }) => theme.spaces.m};
+
+    & svg {
+      width: 28px;
+      height: 28px;
+    }
   }
 
   &:hover {
     color: ${({ theme }) => theme.colors.background.main};
     background-color: ${({ theme }) => theme.colors.texts.highlight};
 
-    & svg {
-      fill: ${({ theme }) => theme.colors.background.main};
+    & a {
+      color: inherit;
+
+      & svg {
+        fill: ${({ theme }) => theme.colors.background.main};
+      }
     }
   }
 

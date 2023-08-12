@@ -26,15 +26,11 @@ export const AboutMe: FC = () => {
           <p>
             Adhering to industry best code practices & patterns, I create web
             solutions that harmoniously balance functionality and aesthetics.
-            Beyond the technical, I am committed to inclusivity, embedding
-            accessibility features for all users. Combining these skills with a
-            keen debugging eye and proactive support, I have earned a reputation
-            for reliability and excellence. My portfolio invites you to explore
-            the synergy of innovation and precision in the digital realm.
-            <br />
-            <br />
-            Looking forward to creating engaging web journeys that leave a
-            lasting impact!
+            Apart the technical, I also have 3 years expertise in SEO which
+            helps me to write the HTML in such a way that screen readers
+            (improve accessbilities) & search engine understand what is the code
+            about. Apart from the work, I love to play Soul based & open world
+            PC games, reading & writing technical blogs, meditation.
           </p>
         </div>
         <div className="skills">

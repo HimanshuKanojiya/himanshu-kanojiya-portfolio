@@ -49,11 +49,11 @@ const featuredProjectdata = [
       codeLink: {
         value: "See the code",
         href: "/",
-        show: true,
+        show: false,
       },
       liveLink: {
         value: "Visit the app",
-        href: "/",
+        href: "https://purchase.njoi.com.my/en-support",
         show: true,
       },
     },
@@ -73,10 +73,10 @@ export const Projects: FC = () => {
     <SectionWrapper title="MY PROJECTS" sectionId="projects">
       <ProjectsContainer>
         <p className="about-projects">
-          My name is Chase Ohlson. I am a frontend software engineer & freelance
-          web developer in Los Angeles -- with roots in digital marketing & SEO.
-          I am passionate about music, technology and basically everything that
-          makes the internet tick.
+          Discover the essence of my work through these Web Apps. Experience the
+          embodiment of my dedication to clean design, performace, and a
+          user-friendly interface that highlights my skills and projects
+          effectively.
         </p>
         <ul className="featured-projects">
           {featuredProjectdata.map((project, index) => {

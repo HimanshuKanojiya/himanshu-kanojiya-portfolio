@@ -11,5 +11,6 @@ export const SocialIconsContainer = styled.div`
     text-decoration: none;
     opacity: 100%;
     color: ${({ theme }) => theme.colors.texts.label};
+    display: flex;
   }
 `;

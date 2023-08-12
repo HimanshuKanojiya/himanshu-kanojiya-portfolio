@@ -67,14 +67,14 @@ export const HeaderNavMenu: FC = () => {
           <li>
             <SocialIcons
               type="github"
-              link="/"
+              link="https://github.com/HimanshuKanojiya"
               value="himanshu kanojiya github link"
             />
           </li>
           <li>
             <SocialIcons
               type="linkedIn"
-              link="/"
+              link="https://www.linkedin.com/in/himanshukanojiya98/"
               value="himanshu kanojiya linkedIn link"
             />
           </li>

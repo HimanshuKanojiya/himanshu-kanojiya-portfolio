@@ -61,12 +61,12 @@ export const MobileMenu: FC<IMobileMenu> = ({
           <SocialIcons
             type="github"
             value="himanshu kanojiya github link"
-            link="/"
+            link="https://github.com/HimanshuKanojiya"
           />
           <SocialIcons
             type="linkedIn"
             value="himanshu kanojiya linkedIn link"
-            link="/"
+            link="https://www.linkedin.com/in/himanshukanojiya98/"
           />
         </li>
         <li>
