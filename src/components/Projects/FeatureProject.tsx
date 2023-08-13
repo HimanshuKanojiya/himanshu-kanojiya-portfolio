@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { AiOutlineLink, AiOutlineGithub } from "react-icons/ai";
-import { SiRedux } from "react-icons/si";
 
 import { FeatureProjectContainer } from "./styles/FeatureProjectContainer";
+import { GetTechWithIcon } from "@components/GetTechWithIcon";
 
 export const FeatureProject: FC<IFeatureProjectProps> = ({
   number,
@@ -30,13 +30,13 @@ export const FeatureProject: FC<IFeatureProjectProps> = ({
           <h3>{title}</h3>
           <span className="links-to-project">
             {moreInfo.liveLink.show && (
-              <Link href={moreInfo.liveLink.href}>
+              <Link href={moreInfo.liveLink.href} target="_blank">
                 <AiOutlineLink width="20px" height="20px" color="#dadaf2" />
                 <p>{moreInfo.liveLink.value}</p>
               </Link>
             )}
             {moreInfo.codeLink.show && (
-              <Link href={moreInfo.codeLink.href}>
+              <Link href={moreInfo.codeLink.href} target="_blank">
                 <AiOutlineGithub width="20px" height="20px" color="#dadaf2" />
                 <p>{moreInfo.codeLink.value}</p>
               </Link>
@@ -51,8 +51,10 @@ export const FeatureProject: FC<IFeatureProjectProps> = ({
           {techUsed.map((tech) => {
             return (
               <li key={tech.id}>
-                <SiRedux width="20px" height="20px" color="#dadaf2" />
-                {tech.value}
+                <GetTechWithIcon
+                  type={tech.id as techTypes}
+                  text={tech.value}
+                />
               </li>
             );
           })}

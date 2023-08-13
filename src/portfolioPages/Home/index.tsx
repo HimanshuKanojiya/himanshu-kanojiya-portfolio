@@ -24,7 +24,7 @@ export const Home: FC = () => {
         <HeroSection />
         <AboutMe />
         <WorkExperience />
-        <Projects />
+        {/* <Projects /> */}
         <Blogs />
         <Contact />
         <Footer />

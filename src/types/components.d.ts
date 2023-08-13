@@ -36,3 +36,18 @@ interface INormalProjectProps {
   number: number;
   featuredLabelText: string;
 }
+
+type techTypes =
+  | "reduxToolkit"
+  | "styledComponents"
+  | "reactRouter"
+  | "reactJs"
+  | "typescript"
+  | "reactTestingLibrary"
+  | "jest"
+  | "nextJs";
+
+interface IGetTechWithIcon {
+  type: techTypes;
+  text: string;
+}

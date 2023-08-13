@@ -32,6 +32,10 @@ export const HeaderNavContainer = styled.nav`
         opacity: 80%;
         color: ${({ theme }) => theme.colors.texts.label};
         letter-spacing: 0.4px;
+
+        &:hover {
+          opacity: 100%;
+        }
       }
     }
 

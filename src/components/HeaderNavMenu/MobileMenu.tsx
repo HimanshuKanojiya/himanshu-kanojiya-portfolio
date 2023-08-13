@@ -17,10 +17,10 @@ const headNavigationMenu = [
     id: "#experience",
     value: "EXPERIENCE",
   },
-  {
-    id: "#projects",
-    value: "PROJECTS",
-  },
+  // {
+  //   id: "#projects",
+  //   value: "PROJECTS",
+  // },
   {
     id: "#blogs",
     value: "BLOGS",

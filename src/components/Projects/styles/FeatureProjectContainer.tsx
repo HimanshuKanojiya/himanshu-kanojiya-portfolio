@@ -84,18 +84,10 @@ export const FeatureProjectContainer = styled.div`
     & .project-footer {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       margin-top: ${({ theme }) => theme.spaces.s};
       color: ${({ theme }) => theme.colors.texts.label};
       gap: ${({ theme }) => theme.spaces.l};
-
-      & li {
-        display: flex;
-        align-items: center;
-        gap: ${({ theme }) => theme.spaces.xs};
-        font-size: ${({ theme }) => theme.fontSize.mobile.label};
-        font-family: ${({ theme }) => theme.fontFamily.chakraPetch};
-        font-weight: 500;
-      }
     }
   }
 
@@ -151,10 +143,6 @@ export const FeatureProjectContainer = styled.div`
       & .project-footer {
         margin-top: ${({ theme }) => theme.spaces.s};
         gap: ${({ theme }) => theme.spaces.l};
-
-        & li {
-          font-size: ${({ theme }) => theme.fontSize.desktop.label};
-        }
       }
     }
 

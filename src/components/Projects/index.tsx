@@ -1,17 +1,13 @@
 import { FC } from "react";
-import Link from "next/link";
-import Image from "next/image";
-
-import { AiOutlineLink, AiOutlineGlobal } from "react-icons/ai";
-import { SiRedux, SiStyledcomponents, SiReactrouter } from "react-icons/si";
-import { FaReact } from "react-icons/fa";
 
 import { SectionWrapper } from "@components/SectionWrapper";
 import { ProjectsContainer } from "./styles/ProjectsContainer";
 
-import projectDemoImage from "@assets/images/netflix-clone-using-vanilla.png";
 import { FeatureProject } from "./FeatureProject";
 import { NormalProject } from "./NormaProject";
+
+import projectDemoImage from "@assets/images/netflix-clone-using-vanilla.png";
+import njoiProjectImage from "@assets/images/njoi.png";
 
 const featuredProjectdata = [
   {
@@ -19,6 +15,7 @@ const featuredProjectdata = [
     title: "My Astro Web",
     subLabel: "Feauted Project",
     isFeatured: true,
+    image: projectDemoImage,
     moreInfo: {
       codeLink: {
         value: "See the code",
@@ -35,8 +32,32 @@ const featuredProjectdata = [
       "It is an entertainment-based platform for postpaid users. Depending on their user category, users can register or sign in, purchase their preferred plans, pay service bills, explore packages, set up auto debit options, and even subscribe to internet plans.",
     techUsed: [
       {
-        id: "SiRedux",
-        value: "Redux & Redux Toolkit",
+        id: "reduxToolkit",
+        value: "Redux Toolkit",
+      },
+      {
+        id: "styledComponents",
+        value: "Styled Components",
+      },
+      {
+        id: "nextJs",
+        value: "Next JS",
+      },
+      {
+        id: "reactRouter",
+        value: "React Router",
+      },
+      {
+        id: "typescript",
+        value: "Typescript",
+      },
+      {
+        id: "reactTestingLibrary",
+        value: "React Testing Library",
+      },
+      {
+        id: "jest",
+        value: "Jest",
       },
     ],
   },
@@ -45,6 +66,7 @@ const featuredProjectdata = [
     title: "NJOI Web",
     subLabel: "Feauted Project",
     isFeatured: true,
+    image: njoiProjectImage,
     moreInfo: {
       codeLink: {
         value: "See the code",
@@ -61,8 +83,32 @@ const featuredProjectdata = [
       "The project focuses on an entertainment-based platform for prepaid users, where users can sign up for their preferred entertainment plans, explore available packages, purchase channels and movies, and add packs to their existing plans.",
     techUsed: [
       {
-        id: "SiRedux",
-        value: "Redux & Redux Toolkit",
+        id: "reduxToolkit",
+        value: "Redux Toolkit",
+      },
+      {
+        id: "styledComponents",
+        value: "Styled Components",
+      },
+      {
+        id: "reactJs",
+        value: "React JS",
+      },
+      {
+        id: "reactRouter",
+        value: "React Router",
+      },
+      {
+        id: "typescript",
+        value: "Typescript",
+      },
+      {
+        id: "reactTestingLibrary",
+        value: "React Testing Library",
+      },
+      {
+        id: "jest",
+        value: "Jest",
       },
     ],
   },
@@ -87,7 +133,7 @@ export const Projects: FC = () => {
                   number={index}
                   featuredLabelText={project.subLabel}
                   description={project.description}
-                  image={projectDemoImage}
+                  image={project.image}
                   techUsed={project.techUsed}
                   moreInfo={project.moreInfo}
                   className={(index + 1) % 2 === 0 ? "reverse-column" : ""}
