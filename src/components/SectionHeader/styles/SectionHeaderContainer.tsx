@@ -4,16 +4,17 @@ export const SectionHeaderContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 12px;
-  color: ${({ theme }) => theme.colors.texts.subHeaders};
 
   & h2 {
     white-space: nowrap;
     font-size: ${({ theme }) => theme.fontSize.mobile.h2};
+    color: ${({ theme }) => theme.colors.texts.highlight};
   }
 
   & .heading-border {
     width: 100%;
     border: solid 1px ${({ theme }) => theme.colors.texts.body};
+    opacity: 30%;
   }
 
   @media (min-width: 991px) {

@@ -18,7 +18,7 @@ export const WorkExperienceContainer = styled.div`
       white-space: nowrap;
       font-size: ${({ theme }) => theme.fontSize.mobile.label};
       color: ${({ theme }) => theme.colors.texts.label};
-      font-weight: 600;
+      font-weight: 500;
       overflow-y: hidden;
       gap: ${({ theme }) => theme.spaces.xl};
 
@@ -27,6 +27,7 @@ export const WorkExperienceContainer = styled.div`
         padding-bottom: ${({ theme }) => theme.spaces.s};
         cursor: pointer;
         letter-spacing: 0.7px;
+        text-align: center;
       }
 
       &::-webkit-scrollbar {
@@ -37,6 +38,7 @@ export const WorkExperienceContainer = styled.div`
 
   & .selected-experience {
     border-bottom: 2px solid ${({ theme }) => theme.colors.texts.highlight};
+    font-weight: 600;
   }
 
   & .about-experience {
@@ -79,7 +81,8 @@ export const WorkExperienceContainer = styled.div`
       margin-bottom: ${({ theme }) => theme.spaces.xxl2};
 
       & ul {
-        font-size: ${({ theme }) => theme.fontSize.desktop.label};
+        font-size: ${({ theme }) =>
+          theme.fontSize.desktop.secondaryInformation};
       }
     }
 

@@ -106,17 +106,32 @@ export const MouseIconContainer = styled.div`
   font-family: ${({ theme }) => theme.fontFamily.chakraPetch};
   cursor: pointer;
 
-  & .mouse-line {
-    display: block;
-    transition: transform 250ms ease-in;
+  .mouse {
+    width: 30px;
+    height: 50px;
+    border: 2px solid ${({ theme }) => theme.colors.texts.borderColor20per};
+    border-radius: 60px;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: ${({ theme }) => theme.colors.texts.highlight};
+      border-radius: 50%;
+      opacity: 1;
+      animation: wheelDown 2s infinite;
+    }
   }
 
-  &:hover .mouse-line {
-    transform: translateY(2.5px);
-  }
-
-  & p {
-    margin-top: ${({ theme }) => theme.spaces.xxs};
-    line-height: 0;
+  @keyframes wheelDown {
+    to {
+      opacity: 0;
+      top: 30px;
+    }
   }
 `;

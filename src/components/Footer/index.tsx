@@ -20,7 +20,7 @@ export const Footer: FC = () => {
         </li>
         <li>
           <p>
-            <span>Design & Coded</span> by Himanshu Kanojiya
+            <span>Design & Built by</span> by Himanshu Kanojiya
           </p>
         </li>
         <li>

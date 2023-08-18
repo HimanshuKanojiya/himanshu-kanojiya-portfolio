@@ -25,7 +25,7 @@ export const ContactUsButton: FC = () => {
         height={24}
         alt="connect with himanshu on email"
       />
-      CONTACT US
+      <p>CONTACT US</p>
     </ContactUsButtonContainer>
   );
 };

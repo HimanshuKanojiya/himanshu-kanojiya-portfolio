@@ -83,6 +83,11 @@ export const BlogsContainer = styled.div`
         padding: ${({ theme }) => theme.spaces.xxl2};
         height: 381px;
 
+        & img {
+          width: 52px;
+          height: 52px;
+        }
+
         & h3 {
           margin: ${({ theme }) => `${theme.spaces.m} 0 ${theme.spaces.xs}`};
           font-size: ${({ theme }) => theme.fontSize.desktop.h3};

@@ -36,7 +36,7 @@ export const AboutMeContainer = styled.div`
 
       & h3 {
         font-size: ${({ theme }) => theme.fontSize.mobile.h3};
-        color: ${({ theme }) => theme.colors.texts.subHeaders};
+        color: ${({ theme }) => theme.colors.texts.highlight};
         margin: ${({ theme }) => `${theme.spaces.m} 0 ${theme.spaces.xs}`};
       }
 
@@ -79,8 +79,8 @@ export const AboutMeContainer = styled.div`
           theme.colors.texts.borderColor20per};
 
         & img {
-          width: 61px;
-          height: 61px;
+          width: 52px;
+          height: 52px;
         }
 
         & h3 {

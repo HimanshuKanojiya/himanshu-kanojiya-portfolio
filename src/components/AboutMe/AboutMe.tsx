@@ -54,22 +54,7 @@ export const AboutMe: FC = () => {
               <li>Redux, Redux Toolkit & Tansack React Query</li>
             </ul>
           </div>
-          <div>
-            <Image
-              src={uiDesigning}
-              width={61}
-              height={61}
-              alt="UI Designing (Intermediate)"
-            />
-            <h3>UI Designing (Intermediate)</h3>
-            <p>
-              Combining frontend powers with a keen eye for aesthetics to craft
-              visually stunning and user-centric interfaces.
-            </p>
-            <ul>
-              <li>Figma</li>
-            </ul>
-          </div>
+
           <div>
             <Image
               src={testingTools}
@@ -88,11 +73,27 @@ export const AboutMe: FC = () => {
               <li>Vitest</li>
               <li>React testing library</li>
             </ul>
-            <h3>Tools</h3>
+          </div>
+
+          <div>
+            <Image
+              src={uiDesigning}
+              width={61}
+              height={61}
+              alt="UI Designing (Intermediate)"
+            />
+            <h3>Tools & Process</h3>
+            <p>
+              Using helpful tools and organized methods to make creating and
+              launching front-end projects easier and more effective.
+            </p>
             <ul>
               <li>Github & Gitlab</li>
               <li>Bitbucket</li>
               <li>Vercel</li>
+              <li>Jira</li>
+              <li>Agile & Scrum</li>
+              <li>Webflow</li>
             </ul>
           </div>
         </div>

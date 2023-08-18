@@ -11,12 +11,12 @@ export const Contact: FC = () => {
     <ContactContainer>
       <div className="contact-body">
         <Image src={contactImage} width={306} height={321} alt="hero image" />
-        <h2>Let’s collaborate</h2>
+        <h2>Exploring New Opportunities!</h2>
         <p>
-          Ready to work together? With a solid 2-year foundation in React and
-          Next.js, coupled with 3 years mastering SEO, I am primed to enhance
-          your projects. Lets collaborate for impactful web solutions that drive
-          results. Hire me today to make your vision a reality.
+          I enjoy creating web apps and I am ready for new challenges in a
+          different environment. Lets connect on LinkedIn to chat about how I
+          can contribute to your team. Just drop me a message on LinkedIn, and I
+          will be sure to reply!
         </p>
         <LinkedInButton />
       </div>

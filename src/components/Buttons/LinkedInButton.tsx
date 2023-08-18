@@ -13,7 +13,7 @@ export const LinkedInButton: FC = () => {
         target="_blank"
       >
         <AiOutlineLinkedin width={35} height={35} color="#2ff2f0" />
-        Connect on LinkedIn
+        <p>Connect on LinkedIn</p>
       </Link>
     </LinkedInButtonContainer>
   );

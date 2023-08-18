@@ -12,6 +12,9 @@ export const ContactUsButtonContainer = styled.a`
   width: 172px;
   height: 48px;
   font-weight: 600;
+  transition-property: all;
+  transition-duration: 450ms;
+  transition-timing-function: cubic-bezier(0.075, 0, 0.165, 1);
 
   & img {
     margin-right: ${({ theme }) => theme.spaces.xs};
@@ -24,6 +27,10 @@ export const ContactUsButtonContainer = styled.a`
   &:hover {
     color: ${({ theme }) => theme.colors.background.main};
     background-color: ${({ theme }) => theme.colors.texts.highlight};
+
+    & p {
+      display: none;
+    }
   }
 
   &:hover img:nth-of-type(1) {
@@ -32,6 +39,7 @@ export const ContactUsButtonContainer = styled.a`
 
   &:hover img:nth-of-type(2) {
     display: block;
+    transform: translate(10%, 0) scale(1);
   }
 `;
 
@@ -45,6 +53,9 @@ export const LinkedInButtonContainer = styled.button`
   font-weight: 600;
   white-space: nowrap;
   cursor: pointer;
+  transition-property: all;
+  transition-duration: 450ms;
+  transition-timing-function: cubic-bezier(0.075, 0, 0.165, 1);
 
   & a {
     text-decoration: none;
@@ -56,6 +67,12 @@ export const LinkedInButtonContainer = styled.button`
     & svg {
       width: 28px;
       height: 28px;
+      transform: none;
+    }
+
+    & p {
+      margin: 0;
+      padding: 0;
     }
   }
 
@@ -68,6 +85,11 @@ export const LinkedInButtonContainer = styled.button`
 
       & svg {
         fill: ${({ theme }) => theme.colors.background.main};
+        transform: translate(calc(306px / 2 - 30px), 0) scale(1.5);
+      }
+
+      & p {
+        opacity: 0;
       }
     }
   }

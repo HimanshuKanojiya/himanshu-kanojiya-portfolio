@@ -15,7 +15,7 @@ export const SocialIcons: FC<ISocialIcons> = ({ link, value, type }) => {
     case "github":
       return (
         <SocialIconsContainer>
-          <Link href={link}>
+          <Link href={link} target="_blank">
             <Image src={githubIcon} width={30} height={30} alt={value} />
           </Link>
         </SocialIconsContainer>
@@ -24,7 +24,7 @@ export const SocialIcons: FC<ISocialIcons> = ({ link, value, type }) => {
     case "linkedIn":
       return (
         <SocialIconsContainer>
-          <Link href={link}>
+          <Link href={link} target="_blank">
             <Image src={linkedinIcon} width={35} height={35} alt={value} />
           </Link>
         </SocialIconsContainer>

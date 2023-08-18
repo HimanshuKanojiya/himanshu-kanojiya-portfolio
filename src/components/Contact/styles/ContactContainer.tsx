@@ -13,23 +13,25 @@ export const ContactContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: absolute;
     top: -14%;
     width: 100%;
     padding: ${({ theme }) => theme.spaces.l};
 
-    & img {
+    & > img {
       width: 250px;
       height: auto;
     }
 
-    & h2 {
+    & > h2 {
       font-size: ${({ theme }) => theme.fontSize.mobile.h2};
       color: ${({ theme }) => theme.colors.texts.subHeaders};
       margin: ${({ theme }) => `${theme.spaces.xl} 0 ${theme.spaces.xs}`};
+      text-align: center;
     }
 
-    & p {
+    & > p {
       text-align: center;
       margin-bottom: ${({ theme }) => theme.spaces.l};
       font-size: ${({ theme }) => theme.fontSize.mobile.body};
@@ -46,17 +48,17 @@ export const ContactContainer = styled.div`
     & .contact-body {
       padding: ${({ theme }) => theme.spaces.xxl2};
 
-      & img {
+      & > img {
         width: 306px;
         height: 321px;
       }
 
-      & h2 {
+      & > h2 {
         font-size: ${({ theme }) => theme.fontSize.desktop.h2};
         margin: ${({ theme }) => `${theme.spaces.xxl7} 0 ${theme.spaces.xs}`};
       }
 
-      & p {
+      & > p {
         margin-bottom: ${({ theme }) => theme.spaces.xxl7};
         font-size: ${({ theme }) => theme.fontSize.desktop.body};
       }
