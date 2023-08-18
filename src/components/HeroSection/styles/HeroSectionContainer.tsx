@@ -30,6 +30,7 @@ export const HeroSectionContainer = styled.div`
       font-family: ${({ theme }) => theme.fontFamily.chakraPetch};
       font-weight: 600;
       letter-spacing: 0.5px;
+      text-align: center;
     }
 
     & .heading {
