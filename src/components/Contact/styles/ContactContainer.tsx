@@ -7,7 +7,7 @@ export const ContactContainer = styled.div`
   border-top: 2px solid ${({ theme }) => theme.colors.texts.highlight};
   margin-top: 76px;
   position: relative;
-  min-height: 658px;
+  min-height: 700px;
 
   & .contact-body {
     display: flex;
