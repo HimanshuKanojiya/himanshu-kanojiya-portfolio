@@ -8,6 +8,7 @@ export const ContactContainer = styled.div`
   margin-top: 76px;
   position: relative;
   min-height: 675px;
+  margin-inline: auto;
 
   & .contact-body {
     display: flex;
