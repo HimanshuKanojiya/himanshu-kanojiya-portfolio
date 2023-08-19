@@ -10,7 +10,7 @@ export const SectionWrapper: FC<ISectionWrapper> = ({
 }) => {
   return (
     <SectionWrapperContainer id={sectionId}>
-      <SectionHeader title={title} />
+      {Boolean(title) && <SectionHeader title={title as string} />}
       {children}
     </SectionWrapperContainer>
   );

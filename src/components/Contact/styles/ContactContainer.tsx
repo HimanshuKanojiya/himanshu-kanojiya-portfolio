@@ -1,14 +1,11 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.div`
-  margin-inline: ${({ theme }) => theme.spaces.l};
   background-color: ${({ theme }) => theme.colors.background.secondary};
   border: 1px solid ${({ theme }) => theme.colors.texts.borderColor10per};
   border-top: 2px solid ${({ theme }) => theme.colors.texts.highlight};
-  margin-top: 76px;
   position: relative;
   min-height: 675px;
-  margin-inline: auto;
 
   & .contact-body {
     display: flex;
@@ -41,8 +38,6 @@ export const ContactContainer = styled.div`
   }
 
   @media (min-width: 991px) {
-    margin-top: 104px;
-    margin-inline: 100px;
     max-width: 1536px;
     height: 658px;
 
